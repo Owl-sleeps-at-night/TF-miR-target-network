@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miRNA-target Filtering</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* 左侧区域：筛选条件和按钮 */
+        #sidebar {
+            width: 300px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        /* 下载按钮放在底部 */
+        #sidebar div[style="margin-top: auto;"] {
+            margin-top: auto;
+            text-align: center;
+        }
+
+        #sidebar label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        #miRFamilyTableContainer {
+            max-height: 200px; /* 设置最大高度 */
+            overflow-y: auto;  /* 启用垂直滚动条 */
+            border: 1px solid #ddd; /* 添加边框 */
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+
+
+        #sidebar select, #sidebar button {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        #sidebar .subcellular-info {
+            margin-top: 20px;
+        }
+
+        #sidebar .subcellular-info table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        #sidebar .subcellular-info table th, #sidebar .subcellular-info table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-size: 12px;
+        }
+
+        #sidebar .subcellular-info table th {
+            background-color: #eaeaea;
+        }
+
+        /* 右侧区域：网络图 */
+        #network-container {
+            flex: 1;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        svg#network {
+            width: 95%;
+            height: 95%;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 左侧区域：筛选条件和按钮 -->
+<div id="sidebar">
+    <h2>Filters</h2>
+
+    <!-- 筛选条件 -->
+    <label for="cell_condition">Cell Condition:</label>
+    <select id="cell_condition">
+        <option value="">All</option>
+        <option value="CD4">CD4</option>
+        <option value="CD8A">CD8A</option>
+        <option value="CD4CD8A">CD4CD8A</option>
+    </select>
+
+    <label for="ART_condition">ART Condition:</label>
+    <select id="ART_condition">
+        <option value="">All</option>
+        <option value="ART">ART</option>
+        <option value="nonART">nonART</option>
+    </select>
+
+    <label for="cancer_condition">Cancer Condition:</label>
+    <select id="cancer_condition">
+        <option value="">All</option>
+        <option value="BLCA">BLCA</option>
+        <option value="BRCA">BRCA</option>
+        <option value="COAD">COAD</option>
+        <option value="ESCA">ESCA</option>
+        <option value="HNSC">HNSC</option>
+        <option value="KICH">KICH</option>
+        <option value="KIRC">KIRC</option>
+        <option value="KIRP">KIRP</option>
+        <option value="LIHC">LIHC</option>
+        <option value="LUAD">LUAD</option>
+        <option value="LUSC">LUSC</option>
+        <option value="PRAD">PRAD</option>
+        <option value="READ">READ</option>
+        <option value="STAD">STAD</option>
+        <option value="THCA">THCA</option>
+        <option value="UCEC">UCEC</option>
+    </select>
+
+    <!-- Filter 1 按钮 -->
+    <button type="button" onclick="filterSubcellularLocations()">Filter 1</button>
+
+    <!-- Subcellular Location 信息展示 -->
+    <div class="subcellular-info">
+        <h3>Subcellular Location Information</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Subcellular Location</th>
+                <th>Count</th>
+                <th>Select</th>
+            </tr>
+            </thead>
+            <tbody id="subcellular-table-body"></tbody>
+        </table>
+    </div>
+
+    <!-- 模式选择 -->
+    <label for="mode">Select Mode:</label>
+    <select id="mode">
+        <option value="co-regulation">Co-regulation</option>
+        <option value="full">Full</option>
+    </select>
+
+    <!-- Filter 按钮 -->
+    <button type="button" onclick="filterData()">Filter</button>
+
+    <!-- miRNA Family Section -->
+    <div id="miRFamilySection" style="display: none;">
+        <h3>miRNA Family Information</h3>
+        <div id="miRFamilyTableContainer">
+            <table>
+                <thead id="miRFamilyTableHeader">
+                <tr>
+                    <th>miRNA Family</th>
+                    <th>Count</th>
+                    <th>Select</th>
+                    <th>
+                        <label>
+                            <input type="checkbox" id="selectAllFamilies"> Select All
+                        </label>
+                    </th>
+                </tr>
+                </thead>
+                <tbody id="miRFamilyTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <button id="filter2Button" style="display: none;" onclick="applyMiRFamilyFilter()">Filter2</button>
+
+
+
+    <!-- 下载按钮 -->
+    <div style="margin-top: auto;"> <!-- 将按钮放置在最下方 -->
+        <h3>Downloads</h3>
+        <button onclick="downloadDataAsTabDelimited(globalMiRTargetData,'miRNA-Target-Data.txt')">
+            Download miRNA-Target Data
+        </button>
+        <button onclick="downloadDataAsTabDelimited(globalTFMiRNAData,'TF-miRNA-Data.txt')">
+            Download TF-miRNA Data
+        </button>
+    </div>
+</div>
+
+<!-- 右侧区域：网络图 -->
+<div id="network-container">
+    <svg id="network"></svg>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
