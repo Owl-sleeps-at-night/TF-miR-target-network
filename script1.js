@@ -2,6 +2,11 @@ let miRTargetData = [];
 let TFMiRNAData = [];
 let globalMiRTargetData = []; // 全局变量，用于存储筛选后的 miRNA-target 数据
 let globalTFMiRNAData = []; // 全局变量，用于存储筛选后的 TF-miRNA 数据
+
+//主体部分
+// 页面加载时加载数据
+window.onload = loadData;
+
 // 加载 JSON 文件
 async function loadData() {
     try {
@@ -47,6 +52,53 @@ function filterSubcellularLocations() {
 
     console.log('miRNA-target:', filteredMiRTarget);
 
+    // 提取 Target_gene 和 Subcellular_location 信息并去重
+    const uniqueTargets = filteredMiRTarget.reduce((acc, item) => {
+        const target = item.Target_Gene[0];
+        const subcellularLocation = item.Subcellular_location ? item.Subcellular_location[0] : "No data";
+
+        // 如果不存在，添加到结果
+        if (!acc.some(entry => entry.target === target)) {
+            acc.push({ target, subcellularLocation });
+        }
+        return acc;
+    }, []);
+
+    console.log('Unique Targets:', uniqueTargets);
+
+    // 动态填充表格
+    populateTargetTable(uniqueTargets);
+
+    // 将筛选后的 miRNA-target 数据保存到全局变量，供下一步使用
+    window.filteredMiRTargetStep1 = filteredMiRTarget;
+
+// 填充表格函数
+function populateTargetTable(targetData) {
+    const tableBody = document.querySelector('#target-table tbody');
+    tableBody.innerHTML = ''; // 清空之前的内容
+
+    targetData.forEach(entry => {
+        const row = document.createElement('tr');
+
+        // 创建 Target 列
+        const targetCell = document.createElement('td');
+
+        targetCell.textContent = entry.target;
+        targetCell.style.padding = '8px';
+        targetCell.style.border = '1px solid #ddd';
+        row.appendChild(targetCell);
+
+        // 创建 Subcellular Location 列
+        const subcellularCell = document.createElement('td');
+        subcellularCell.textContent = entry.subcellularLocation;
+        subcellularCell.style.padding = '8px';
+        subcellularCell.style.border = '1px solid #ddd';
+        row.appendChild(subcellularCell);
+
+        tableBody.appendChild(row);
+    });
+}
+
     const subcellularCount = {};
     // 提取并统计 Subcellular_location 分类
     // const subcellularLocations = new Set();
@@ -66,6 +118,11 @@ function filterSubcellularLocations() {
 
     // 将筛选后的 miRNA-target 数据保存到全局变量，供下一步使用
     window.filteredMiRTargetStep1 = filteredMiRTarget;
+
+    const targetPanel = document.querySelector("#target-panel");
+    if (!targetPanel.classList.contains("open")) {
+        targetPanel.classList.add("open");
+    }
 }
 
 // 根据用户选择的条件筛选数据
@@ -78,10 +135,7 @@ function filterData() {
         alert('Please select at least one Subcellular Location.');
         return;
     }
-
-
     console.log('Selected Subcellular Locations:', checkedLocations);
-
     // 获取第一步筛选结果
     let filteredMiRTarget =  window.filteredMiRTargetStep1.filter(item => {
         if (item.Subcellular_location) {
@@ -137,10 +191,10 @@ function filterData() {
         const targetsWithMultipleRNAs = Object.keys(filteredMiRTargetCount).filter(target => filteredMiRTargetCount[target].size > 1);
         console.log('miRNAs with multiple targets:', targetsWithMultipleRNAs);
         const filteredmiRNAsWithMultipletargets = filteredMiRTarget.filter(item => {
-            // 如果 item.TF 是数组，提取第一个元素
+            // 如果 item.miRNA是数组，提取第一个元素
             const miRname = Array.isArray(item.miRNA) ? item.miRNA[0] : item.miRNA;
 
-            // 检查是否包含在 tfWithMultipleMiRNAs 中
+            // 检查是否包含在 targetsWithMultipleMiRNAs 中
             return targetsWithMultipleRNAs.includes(miRname);
         });
         console.log('New mir-target relation:', filteredmiRNAsWithMultipletargets);
@@ -149,6 +203,19 @@ function filterData() {
     }else{
         // 在 "full" 模式下，只执行常规的筛选
         console.log("Full mode selected, skipping co-regulation specific processing.");
+    }
+    // 检查 filteredMiRTarget 是否为空
+    if (filteredMiRTarget.length === 0) {
+        // 显示警告信息
+        showWarningMessage("No targets regulated by multiple miRNAs found for the selected Subcellular Locations, try showing all miRNA-target pairs!");
+        return; // 终止后续逻辑
+    }
+    // 更新 Network Target Table
+    updateTargetTable(filteredMiRTarget);
+
+    const targetPanel = document.querySelector("#target-panel");
+    if (!targetPanel.classList.contains("open")) {
+        targetPanel.classList.add("open");
     }
 
     // 提取 miR_family 信息
@@ -270,34 +337,29 @@ function applyMiRFamilyFilter() {
     console.log('Filtered miRNA-target:', filteredMiRTarget);
     console.log('Filtered TF-miRNA:', filteredTFWithMultipleMiRNAs);
 
+    // 更新 Network Target Table
+    updateTargetTable(filteredMiRTarget);
     // 更新全局变量
     globalMiRTargetData = filteredMiRTarget;
     globalTFMiRNAData = filteredTFWithMultipleMiRNAs;
 
     // 绘制网络图
     drawDisjointForceDirectedGraph(globalMiRTargetData, globalTFMiRNAData);
-
+    // drawNetwork(globalMiRTargetData, globalTFMiRNAData);
 }
-
-
 
 function displaySubcellularTable(subcellularCount) {
     const tableBody = document.getElementById('subcellular-table-body');
     tableBody.innerHTML = '';
-
-    Object.entries(subcellularCount).forEach(([location, count]) => {
+    // 提取 Subcellular 数据，并按首字母排序
+    const sortedLocations = Object.keys(subcellularCount).sort((a, b) => a.localeCompare(b));
+    sortedLocations.forEach(location => {
         const row = document.createElement('tr');
 
         // Subcellular location 名称
         const locationCell = document.createElement('td');
         locationCell.textContent = location;
         row.appendChild(locationCell);
-
-        // 数量
-        const countCell = document.createElement('td');
-        countCell.textContent = count;
-        row.appendChild(countCell);
-
         // 复选框
         const selectCell = document.createElement('td');
         const checkbox = document.createElement('input');
@@ -313,20 +375,16 @@ function displaySubcellularTable(subcellularCount) {
 function displayMiRFamilyTable(miRFamilies) {
     const tableBody = document.getElementById('miRFamilyTableBody');
     tableBody.innerHTML = ''; // 清空内容
+    // 提取 miRNA Family 数据，并按首字母排序
+    const sortedFamilies = Array.from(miRFamilies.keys()).sort((a, b) => a.localeCompare(b));
 
-    miRFamilies.forEach((count, family) => {
+    sortedFamilies.forEach(family => {
         const row = document.createElement('tr');
 
         // miR-family 名称
         const familyCell = document.createElement('td');
         familyCell.textContent = family;
         row.appendChild(familyCell);
-
-        // 数量
-        const countCell = document.createElement('td');
-        countCell.textContent = count;
-        row.appendChild(countCell);
-
         // 复选框
         const selectCell = document.createElement('td');
         const checkbox = document.createElement('input');
@@ -360,11 +418,6 @@ function displayMiRFamilyTable(miRFamilies) {
     });
 }
 
-
-
-
-
-
 function downloadDataAsTabDelimited(data, fileName) {
     let content = '';
 
@@ -392,194 +445,132 @@ function downloadDataAsTabDelimited(data, fileName) {
     link.click();
 }
 
-// // 展示表格数据的函数
-// function displayTableData(tableId, data) {
-//     const tableBody = document.querySelector(`#${tableId} tbody`);
-//     tableBody.innerHTML = '';
-//
-//     // 填充表格数据
-//     data.forEach(item => {
-//         const row = document.createElement('tr');
-//         for (const key in item) {
-//             if (item.hasOwnProperty(key)) {
-//                 const td = document.createElement('td');
-//                 td.textContent = item[key];
-//                 row.appendChild(td);
-//             }
-//         }
-//         tableBody.appendChild(row);
-//     });
-// }
 
-// 页面加载时加载数据
-window.onload = loadData;
+// 更新 Network Target Table 的内容
+function updateTargetTable(filteredMiRTarget) {
+    const tableBody = document.querySelector("#target-table tbody");
+    tableBody.innerHTML = ""; // 清空表格内容
 
-// 下载表格功能
-// function downloadTabDelimited(fileId) {
-//     const table = document.getElementById(fileId);
-//     const rows = table.querySelectorAll('tr');
-//
-//     let content = '';
-//
-//     // 获取表头
-//     rows[0].querySelectorAll('th').forEach((th, index) => {
-//         content += th.innerText + '\t'; // 用制表符分隔
-//     });
-//     content = content.trim() + '\n'; // 移除最后一个制表符，添加换行符
-//
-//     // 获取表格数据行
-//     rows.forEach(row => {
-//         let rowData = '';
-//         row.querySelectorAll('td').forEach((td, index) => {
-//             rowData += td.innerText + '\t'; // 用制表符分隔
-//         });
-//         if (rowData) {
-//             content += rowData.trim() + '\n'; // 移除最后一个制表符，添加换行符
-//         }
-//     });
-//
-//     // 创建 Blob 对象
-//     const blob = new Blob([content], { type: 'text/plain' });
-//     const link = document.createElement('a');
-//     link.href = URL.createObjectURL(blob);
-//     link.download = fileId + '.txt'; // 下载文件名
-//     link.click();
-// }
+    // 使用 Map 对 Target 去重
+    const uniqueTargets = Array.from(
+        new Map(
+            filteredMiRTarget.map(item => [
+                item.Target_Gene[0], // Map 的键为 Target_Gene（唯一键）
+                {
+                    target: item.Target_Gene[0],
+                    subcellularLocation: item.Subcellular_location ? item.Subcellular_location[0] : "No data"
+                }
+            ])
+        ).values()
+    );
+
+    // 遍历去重后的数据
+    uniqueTargets.forEach(item => {
+        const row = document.createElement("tr");
+
+        // 添加 Target 列
+        const targetCell = document.createElement("td");
+        targetCell.textContent = item.target;
+        row.appendChild(targetCell);
+
+        // 添加 Subcellular Location 列
+        const locationCell = document.createElement("td");
+        locationCell.textContent = item.subcellularLocation;
+        row.appendChild(locationCell);
+
+        // 将行添加到表格
+        tableBody.appendChild(row);
+    });
+}
 
 
 
 //下面是绘制网络图的部分
 
-// 网络图绘制函数，默认的力导向布局，节点随机碰撞后的网络
-// function drawNetwork(filteredMiRTarget, filteredTFWithMultipleMiRNAs) {
-//     // 清理旧的 SVG 内容
-//     d3.select("#network").selectAll("*").remove();
-//     let nodes = [];
-//     let links = [];
-//
-//     // 处理 miRNA-target 数据，生成节点和链接
-//     filteredMiRTarget.forEach(item => {
-//         let miRNA = item.miRNA[0];
-//         let target = item.Target_Gene[0];
-//
-//         if (!nodes.some(node => node.id === miRNA)) {
-//             nodes.push({id: miRNA, type: 'miRNA'});
-//         }
-//         if (!nodes.some(node => node.id === target)) {
-//             nodes.push({id: target, type: 'target'});
-//         }
-//
-//         links.push({source: miRNA, target: target});
-//     });
-//     // 处理 TF-miRNA 数据，生成链接
-//     filteredTFWithMultipleMiRNAs.forEach(item => {
-//         let tf = item.TF[0];
-//         let miRNA = item.miRNA[0];
-//
-//         if (!nodes.some(node => node.id === tf)) {
-//             nodes.push({ id: tf, type: 'TF' });
-//         }
-//         if (!nodes.some(node => node.id === miRNA)) {
-//             nodes.push({ id: miRNA, type: 'miRNA' });
-//         }
-//
-//         links.push({ source: tf, target: miRNA });
-//     });
-//     // 设置 D3.js 网络图的尺寸和力学布局
-//     const width = 1200;
-//     const height = 800;
-//
-//
-//     const svg = d3.select("#network")
-//         .attr("width", width)
-//         .attr("height", height)
-//         .call(d3.zoom().on("zoom", zoomed)) // 缩放和平移功能
-//         .append("g");
-//     function zoomed(event) {
-//         svg.attr("transform", event.transform); // 应用缩放和平移
-//     }
-//     const simulation = d3.forceSimulation(nodes)
-//         .force("link", d3.forceLink(links).id(d => d.id).distance(100))
-//         .force("charge", d3.forceManyBody().strength(-200))
-//         .force("collide", d3.forceCollide(30)) // 添加碰撞检测，半径 30
-//         .force("center", d3.forceCenter(width / 2, height / 2));
-//
-//     // 绘制链接
-//     const link = svg.selectAll(".link")
-//         .data(links)
-//         .enter().append("line")
-//         .attr("class", "link")
-//         .attr("stroke", "#ccc");
-//
-//     // 绘制节点
-//     const node = svg.selectAll(".node")
-//         .data(nodes)
-//         .enter().append("circle")
-//         .attr("class", d => `node ${d.type}`)
-//         .attr("r", 10)
-//         .attr("fill", d => d.type === "miRNA" ? "blue" : d.type === "TF" ? "red" : "green")
-//         .call(d3.drag()
-//             .on("start", dragStarted)
-//             .on("drag", dragging)
-//             .on("end", dragEnded));
-//     // 为每个节点添加标签（节点名称）
-//     const labels = svg.selectAll(".label")
-//         .data(nodes)
-//         .enter().append("text")
-//         .attr("class", "label")
-//         .attr("text-anchor", "middle") // 水平居中对齐
-//         .attr("alignment-baseline", "middle") // 垂直居中对齐
-//         .attr("font-size", "10px") // 字体大小
-//         .attr("fill", "#000") // 设置文本颜色为黑色
-//         .text(d => d.id); // 显示节点名称
-//
-//
-//     // 更新力学模拟的节点和链接位置
-//     simulation.on("tick", function() {
-//         link.attr("x1", d => d.source.x)
-//             .attr("y1", d => d.source.y)
-//             .attr("x2", d => d.target.x)
-//             .attr("y2", d => d.target.y);
-//
-//         node.attr("cx", d => d.x)
-//             .attr("cy", d => d.y);
-//         // 更新标签的位置，使其与节点坐标同步
-//         labels.attr("x", d => d.x)
-//             .attr("y", d => d.y);
-//     });
-//
-//     // 拖拽事件处理函数
-//     function dragStarted(event, d) {
-//         if (!event.active) simulation.alphaTarget(0.3).restart();
-//         d.fx = d.x;
-//         d.fy = d.y;
-//     }
-//
-//     function dragging(event, d) {
-//         d.fx = event.x;
-//         d.fy = event.y;
-//     }
-//
-//     function dragEnded(event, d) {
-//         if (!event.active) simulation.alphaTarget(0);
-//         d.fx = null;
-//         d.fy = null;
-//     }
-// }
-
 //Disjoint force-directed graph Disjoint情况下的力导向布局，适合网络图被分成很多小簇时数据的展示
 function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipleMiRNAs) {
     const width = 1200, height = 800;
 
+    document.querySelector("#search-node-button").addEventListener("click", () => {
+        const searchInput = document.querySelector("#node-search-input").value.trim();
+
+        if (!searchInput) {
+            alert("Please enter a node name to search.");
+            return;
+        }
+
+        // 在当前图中查找匹配的节点
+        const matchedNode = nodes.find(node => node.id === searchInput);
+
+        if (matchedNode) {
+            highlightNode(matchedNode); // 调用高亮节点逻辑
+        } else {
+            alert(`Node "${searchInput}" not found in the network.`);
+        }
+    });
+
+    // // 添加搜索功能
+    // document.getElementById("search-button").addEventListener("click", () => {
+    //     const searchInput = document.getElementById("target-search-input").value.trim();
+    //
+    //     if (!searchInput) {
+    //         alert("Please enter a target name to search.");
+    //         return;
+    //     }
+    //
+    //     // 在节点列表中查找匹配的目标节点
+    //     const matchedNode = nodes.find(node => node.id === searchInput);
+    //
+    //     if (matchedNode) {
+    //         highlightNode(matchedNode); // 调用已有的高亮节点逻辑
+    //     } else {
+    //         alert(`Target "${searchInput}" not found in the network.`);
+    //     }
+    // });
+    // // 搜索 miRNA 节点
+    // document.getElementById("mirna-search-button").addEventListener("click", () => {
+    //     const searchInput = document.getElementById("mirna-search-input").value.trim();
+    //
+    //     if (!searchInput) {
+    //         alert("Please enter a miRNA name to search.");
+    //         return;
+    //     }
+    //
+    //     const matchedNode = nodes.find(node => node.id === searchInput && node.group === "miRNA");
+    //
+    //     if (matchedNode) {
+    //         highlightNode(matchedNode);
+    //     } else {
+    //         alert(`miRNA "${searchInput}" not found in the network.`);
+    //     }
+    // });
+    // // 搜索 TF 节点
+    // document.getElementById("tf-search-button").addEventListener("click", () => {
+    //     const searchInput = document.getElementById("tf-search-input").value.trim();
+    //
+    //     if (!searchInput) {
+    //         alert("Please enter a TF name to search.");
+    //         return;
+    //     }
+    //
+    //     const matchedNode = nodes.find(node => node.id === searchInput && node.group === "TF");
+    //
+    //     if (matchedNode) {
+    //         highlightNode(matchedNode);
+    //     } else {
+    //         alert(`TF "${searchInput}" not found in the network.`);
+    //     }
+    // });
+
     // 1. 数据整理：转换成 nodes 和 links 格式
     const nodes = [];
-    const links = [];
+    let links = [];
     // 定义实验条件到颜色的映射
     const experimentColors = {
-        "Western ": "#e5f5e0",
-        "PCR": "#a1d99b",
+        "Western ": "red",
+        "PCR": "blue",
         "reporter": "#31a354",
-        "default": "black"
+        "default": "grey"
     };
 
 
@@ -596,7 +587,6 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
         // 为每个实验条件添加边
         experiments.forEach(exp => {
             let matched = false;
-
             // 遍历实验条件与颜色的映射，匹配字段
             Object.keys(experimentColors).forEach(key => {
                 if (exp.toLowerCase().includes(key.toLowerCase())) { // 判断实验条件是否包含对应字段
@@ -604,7 +594,6 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
                     matched = true;
                 }
             });
-
             // 如果实验条件未匹配到任何已定义的字段，使用默认颜色
             if (!matched) {
                 links.push({ source: miRNA, target: target, color: experimentColors["default"] });
@@ -622,9 +611,38 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
         if (!nodes.some(node => node.id === tf)) nodes.push({ id: tf, group: "TF" });
         if (!nodes.some(node => node.id === miRNA)) nodes.push({ id: miRNA, group: "miRNA" });
 
-        links.push({ source: tf, target: miRNA, color: experimentColors["default"] });
+        // 根据 relation 字段调整边的样式
+        const relation = item.relation ? String(item.relation).split(',').map(r => r.trim()) : [];
+        let style = "default"; // 默认样式
+        let strokeDasharray = "none"; // 默认实线
+        let markerEnd = null; // 默认无箭头
+        if (relation.includes("Activation") && relation.includes("Repression")) {
+            style = "dashed"; // 虚线
+        } else if (relation.includes("Activation")) {
+            style = "arrow"; // 箭头
+        } else if (relation.includes("Repression")) {
+            style = "dashed-arrow"; // 虚线箭头
+            strokeDasharray = "5,5"; // 定义虚线
+            markerEnd = "url(#arrowhead)"; // 定义箭头
+        }
+        links.push({
+            source: tf,
+            target: miRNA,
+            color: experimentColors["default"],
+            style: style,
+            strokeDasharray: strokeDasharray,
+            markerEnd: markerEnd
+        });
+        // links.push({ source: tf, target: miRNA, color: experimentColors["default"] });
     });
 
+    // 修改 links 数据结构，确保 source 和 target 是节点的 id
+    links = links.map(link => ({
+        ...link, // 保留其他属性，例如 color
+        source: typeof link.source === "string" ? nodes.find(node => node.id === link.source) : link.source,
+        target: typeof link.target === "string" ? nodes.find(node => node.id === link.target) : link.target
+    }));
+    console.log("Generated links:", links);
     // 清理旧图
     d3.select("#network").selectAll("*").remove();
     // 添加 SVG 容器
@@ -641,35 +659,58 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
     svg.call(zoom);
     // 创建一个 g 元素用于平移和缩放
     const g = svg.append("g");
-    // 2. 定义力导向模拟器
 
+
+
+    // 2. 定义力导向模拟器
     const simulation = d3.forceSimulation(nodes)
         .force("link", d3.forceLink(links).id(d => d.id).distance(80)) // 链接力
-        .force("charge", d3.forceManyBody().strength(-500)) // 排斥力
+        .force("charge", d3.forceManyBody().strength(d => (d.group === "target" ? -800 : -600))) // 排斥力
         .force("center", d3.forceCenter(width / 2, height / 2)) // 居中力
-        .force("TF_center", d3.forceRadial(0, width / 2, height / 2).strength(d => d.group === "target")) // Target 节点居中
-        .force("miRNA_radial", d3.forceRadial(200, width / 2, height / 2).strength(d => (d.group === "miRNA" ? 1 : 0))) // miRNA 环绕
-        .force("target_radial", d3.forceRadial(400, width / 2, height / 2).strength(d => (d.group === "TF" ? 1 : 0))); // TF 外围
+        .force("target_center", d3.forceRadial(0, width / 2, height / 2).strength(d => (d.group === "target" ? 0.8 : 0))) // Target 节点居中)
+        .force("miRNA_radial", d3.forceRadial(400, width / 2, height / 2).strength(d => (d.group === "miRNA" ? 0.8 : 0))) // miRNA 环绕
+        .force("TF_radial", d3.forceRadial(500, width / 2, height / 2).strength(d => (d.group === "TF" ? 0.8 : 0))); // TF 外围
 
     // 4. 绘制边
     const link = g.append("g")
         .attr("class", "links")
-        .attr("stroke-opacity", 0.3)
+        .attr("stroke-opacity", 1)
         .selectAll("path")
         .data(links)
         .enter().append("path")
         .attr("fill", "none")
         .attr("stroke", d => d.color) // 根据 links 的 color 属性设置边的颜色
-        .attr("stroke-width", 2)
-        .attr("d", d => {
-            const dx = d.target.x - d.source.x,
-                dy = d.target.y - d.source.y,
-                dr = Math.sqrt(dx * dx + dy * dy) * d.curvature; // 控制弯曲程度
-            return `M${d.source.x},${d.source.y}A${dr},${dr} 0 0,1 ${d.target.x},${d.target.y}`;
-        });
+        .attr("stroke-width", 1)
+        .attr("stroke-dasharray", d => {
+            console.log("Stroke Dasharray for edge:", d.strokeDasharray); // 调试日志
+            return d.strokeDasharray;
+        }) // 虚线
+        .attr("marker-end", d => {
+            console.log("Marker End for edge:", d.markerEnd); // 调试日志
+            return d.markerEnd;
+        }) // 箭头
+        .attr("d", d => calculatePath(d, links)); // 使用 calculatePath 函数计算路径
+
+    // 动态调整箭头位置函数
+    function getArrowRefX(nodeRadius) {
+        return nodeRadius + 25; // 箭头位置基于节点半径 + 一些额外的偏移
+    }
+    // 定义箭头标记
+    svg.append("defs").append("marker")
+        .attr("id", "arrowhead")
+        .attr("viewBox", "0 -5 10 10")
+        .attr("refX", getArrowRefX(20))
+        .attr("refY", 0)
+        .attr("markerWidth", 6)
+        .attr("markerHeight", 6)
+        .attr("orient", "auto")
+        .append("path")
+        .attr("d", "M0,-5L10,0L0,5")
+        .attr("fill", "black");
+
     // 5. 绘制节点组
     const node = g.append("g")
-        .attr("class", "links")
+        .attr("class", "node")
         .selectAll("g")
         .data(nodes)
         .enter().append("g") // 每个节点的容器
@@ -678,6 +719,8 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
     node.append("circle")
         .attr("r", 20) // 节点半径
         .attr("fill", d => d.group === "miRNA" ? "#deebf7" : d.group === "TF" ? "#9ecae1" : "#3182bd")
+        .attr("stroke", d => d.group === "miRNA" ? "#deebf7" : d.group === "TF" ? "#9ecae1" : "#3182bd") // 边框颜色与填充一致
+        .attr("stroke-width", 0.5) // 更细的边框
         .call(d3.drag()
             .on("start", dragstarted)
             .on("drag", dragged)
@@ -696,16 +739,10 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
         .style("user-select", "none"); // 禁止文本被选中
     // 6. 力学模拟更新位置
     simulation.on("tick", () => {
-        link.attr("d", d => {
-            const dx = d.target.x - d.source.x,
-                dy = d.target.y - d.source.y,
-                dr = Math.sqrt(dx * dx + dy * dy) * 0.6; // 控制弯曲程度
-            return `M${d.source.x},${d.source.y}A${dr},${dr} 0 0,1 ${d.target.x},${d.target.y}`;
-        });
-
-        node.attr("transform", d => `translate(${d.x},${d.y})`); // 更新节点位置
-
+        link.attr("d", d => calculatePath(d, links));
+        node.attr("transform", d => `translate(${d.x},${d.y})`);
     });
+
 
     node.on("click", (event, d) => {
             event.stopPropagation();
@@ -724,14 +761,15 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
 
         // 更新边样式
         link.attr("stroke-opacity", d => connectedNodes.has(d.source.id) && connectedNodes.has(d.target.id) ? 1 : 0.1)
-            .attr("stroke-width", d => connectedNodes.has(d.source.id) && connectedNodes.has(d.target.id) ? 4 : 1); // 高亮边加粗
+
 
         // 更新节点样式
         node.select("circle")
             .attr("fill-opacity", d => connectedNodes.has(d.id) ? 1 : 0.1) // 高亮节点透明度变高
             .attr("stroke-opacity", d => connectedNodes.has(d.id) ? 1 : 0.1) // 非相关节点透明
-            .attr("stroke", d => d.id === selectedNode.id ? "#f00" : "#fff") // 高亮当前节点边框
-            .attr("stroke-width", d => d.id === selectedNode.id ? 4 : 1.5); // 高亮当前节点加粗边框
+            .attr("stroke", d => d.id === connectedNodes.has(d.id) ? "#f00" : "#fff") // 高亮当前节点边框
+            .attr("stroke-width", d => d.id === connectedNodes.has(d.id) ? 1 : 0.5); // 高亮当前节点加粗边框
+
 
     }
     // 8. 清除高亮
@@ -747,266 +785,85 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
             .attr("stroke", "#fff")
             .attr("stroke-width", 1.5);
 
-        // 重置文字样式
-        node.select("text")
-            .style("fill-opacity", 1)
-            .style("font-weight", "normal");
+
     }
 
+    // 拖拽行为函数
+    function dragstarted(event, d) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+    }
 
+    function dragged(event, d) {
+        d.fx = event.x;
+        d.fy = event.y;
+    }
 
+    function dragended(event, d) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+
+    }
+
+    // 计算路径函数
+    function calculatePath(d, links) {
+        const sameEdgeGroup = links.filter(
+            edge =>
+                (edge.source.id === d.source.id && edge.target.id === d.target.id) ||
+                (edge.source.id === d.target.id && edge.target.id === d.source.id)
+        );
+
+        const index = sameEdgeGroup.indexOf(d); // 当前边在组内的索引
+        const offset = (index - (sameEdgeGroup.length - 1) / 2) * 500; // 偏移量
+        const curvature = 0.5; // 曲率调整
+
+        const dx = d.target.x - d.source.x;
+        const dy = d.target.y - d.source.y;
+        const dr = Math.sqrt(dx * dx + dy * dy) * (1 + Math.abs(offset) * curvature); // 根据偏移量调整曲率
+
+        return `M${d.source.x},${d.source.y}A${dr},${dr} 0 0,1 ${d.target.x},${d.target.y}`;
+    }
 }
-// 拖拽行为函数
-function dragstarted(event, d) {
-    if (!event.active) simulation.alphaTarget(0.3).restart();
-    d.fx = d.x;
-    d.fy = d.y;
-}
-
-function dragged(event, d) {
-    d.fx = event.x;
-    d.fy = event.y;
-}
-
-function dragended(event, d) {
-    if (!event.active) simulation.alphaTarget(0);
-    d.fx = null;
-    d.fy = null;
-
-}
-// 添加全选功能
-// document.addEventListener('DOMContentLoaded', () => {
-//     const selectAllCheckbox = document.getElementById('selectAllFamilies');
-//     const miRFamilyTableBody = document.getElementById('miRFamilyTableBody');
-//
-//     // 监听全选复选框的点击事件
-//     selectAllCheckbox.addEventListener('change', () => {
-//         const checkboxes = miRFamilyTableBody.querySelectorAll('input[type="checkbox"]');
-//         checkboxes.forEach(checkbox => {
-//             checkbox.checked = selectAllCheckbox.checked;
-//         });
-//     });
-// });
 
 
 
-
-//绘制圆形的网络图，该布局失败了，miRNA和TF太多导致其占满了整个圆周
-// function drawHierarchicalLayout(filteredMiRTarget, filteredTFWithMultipleMiRNAs) {
-//     const width = 1200, height = 800;
+// function populateTargetTable(targetData) {
+//     const tbody = document.querySelector("#target-table tbody");
+//     tbody.innerHTML = "";
 //
-//     // 1. 数据整理
-//     const nodes = [];
-//     const links = [];
+//     targetData.forEach(row => {
+//         const tr = document.createElement("tr");
+//         const targetCell = document.createElement("td");
+//         const locationCell = document.createElement("td");
 //
-//     const targets = new Set();
-//     const miRNAs = new Set();
-//     const TFs = new Set();
+//         targetCell.textContent = row.target;
+//         locationCell.textContent = row.subcellularLocation;
 //
-//     filteredMiRTarget.forEach(item => {
-//         let miRNA = item.miRNA[0];
-//         let target = item.Target_Gene[0];
-//
-//         targets.add(target);
-//         miRNAs.add(miRNA);
-//
-//         links.push({ source: miRNA, target: target });
+//         tr.appendChild(targetCell);
+//         tr.appendChild(locationCell);
+//         tbody.appendChild(tr);
 //     });
 //
-//     filteredTFWithMultipleMiRNAs.forEach(item => {
-//         let tf = item.TF[0];
-//         let miRNA = item.miRNA[0];
 //
-//         TFs.add(tf);
-//         miRNAs.add(miRNA);
-//
-//         links.push({ source: tf, target: miRNA });
-//     });
-//
-//     // 2. 定义节点层次并分组
-//     const centerX = width / 2, centerY = height / 2;
-//     const radiusStep = 150; // 每一层的间隔半径
-//     const layers = { target: 0, miRNA: 1, TF: 2 }; // 层次定义
-//     const maxNodesPerLayer = 40; // 每层的最大节点数
-//
-//     const processedNodes = {};
-//     Array.from(targets).forEach((id, i) => {
-//         nodes.push({
-//             id, group: "target", layer: layers.target,
-//             angle: (2 * Math.PI / Math.min(targets.size, maxNodesPerLayer)) * i
-//         });
-//     });
-//     Array.from(miRNAs).forEach((id, i) => {
-//         nodes.push({
-//             id, group: "miRNA", layer: layers.miRNA,
-//             angle: (2 * Math.PI / Math.min(miRNAs.size, maxNodesPerLayer)) * i
-//         });
-//     });
-//     Array.from(TFs).forEach((id, i) => {
-//         nodes.push({
-//             id, group: "TF", layer: layers.TF,
-//             angle: (2 * Math.PI / Math.min(TFs.size, maxNodesPerLayer)) * i
-//         });
-//     });
-//
-//     // 3. 计算节点坐标
-//     nodes.forEach(node => {
-//         const radius = radiusStep * node.layer + (node.group === "target" ? Math.random() * 30 : 0); // 随机偏移避免堆叠
-//         node.x = centerX + radius * Math.cos(node.angle);
-//         node.y = centerY + radius * Math.sin(node.angle);
-//     });
-//
-//     // 4. 绘制图形
-//     d3.select("#network").selectAll("*").remove();
-//     const svg = d3.select("#network")
-//         .attr("width", width)
-//         .attr("height", height);
-//
-//     // 绘制边
-//     svg.append("g")
-//         .attr("stroke", "#aaa")
-//         .attr("stroke-width", 1)
-//         .selectAll("line")
-//         .data(links)
-//         .enter().append("line")
-//         .attr("x1", d => nodes.find(n => n.id === d.source).x)
-//         .attr("y1", d => nodes.find(n => n.id === d.source).y)
-//         .attr("x2", d => nodes.find(n => n.id === d.target).x)
-//         .attr("y2", d => nodes.find(n => n.id === d.target).y);
-//
-//     // 绘制节点
-//     svg.append("g")
-//         .selectAll("circle")
-//         .data(nodes)
-//         .enter().append("circle")
-//         .attr("cx", d => d.x)
-//         .attr("cy", d => d.y)
-//         .attr("r", 8)
-//         .attr("fill", d => d.group === "target" ? "green" : d.group === "miRNA" ? "orange" : "blue");
-//
-//     // 添加节点标签
-//     svg.append("g")
-//         .selectAll("text")
-//         .data(nodes)
-//         .enter().append("text")
-//         .attr("x", d => d.x)
-//         .attr("y", d => d.y - 10)
-//         .attr("text-anchor", "middle")
-//         .attr("font-size", "8px")
-//         .text(d => d.id);
 // }
-//画圆圈的另一种分层布局，同样失败了
-// function drawConcentricNetwork(filteredMiRTarget, filteredTFWithMultipleMiRNAs) {
-//     const width = 1200, height = 800;
-//     const centerX = width / 2, centerY = height / 2;
-//
-//     // 1. 数据整理
-//     const targetNodes = new Set();
-//     const miRNAtoTargets = {};
-//     const miRNAtoTFs = {};
-//
-//     // 解析 miRNA-target 数据
-//     filteredMiRTarget.forEach(item => {
-//         let target = item.Target_Gene[0];
-//         let miRNA = item.miRNA[0];
-//         targetNodes.add(target);
-//
-//         if (!miRNAtoTargets[miRNA]) miRNAtoTargets[miRNA] = new Set();
-//         miRNAtoTargets[miRNA].add(target);
-//     });
-//
-//     // 解析 TF-miRNA 数据
-//     filteredTFWithMultipleMiRNAs.forEach(item => {
-//         let tf = item.TF[0];
-//         let miRNA = item.miRNA[0];
-//
-//         if (!miRNAtoTFs[miRNA]) miRNAtoTFs[miRNA] = new Set();
-//         miRNAtoTFs[miRNA].add(tf);
-//     });
-//
-//     // 2. 定义节点和边
-//     const nodes = [];
-//     const links = [];
-//
-//     // 添加 Target 节点
-//     Array.from(targetNodes).forEach(target => {
-//         nodes.push({ id: target, group: "target", x: centerX, y: centerY });
-//     });
-//
-//     // 添加 miRNA 节点
-//     const miRNAs = Object.keys(miRNAtoTargets);
-//     const miRNARadius = 150; // miRNA 节点距离 Target 的半径
-//     miRNAs.forEach((miRNA, i) => {
-//         const angle = (2 * Math.PI / miRNAs.length) * i;
-//         const x = centerX + miRNARadius * Math.cos(angle);
-//         const y = centerY + miRNARadius * Math.sin(angle);
-//         nodes.push({ id: miRNA, group: "miRNA", x, y });
-//
-//         // 连接 miRNA 和 Target
-//         miRNAtoTargets[miRNA].forEach(target => {
-//             links.push({ source: miRNA, target: target });
-//         });
-//     });
-//
-//     // 添加 TF 节点
-//     const tfRadius = 80; // TF 节点围绕 miRNA 的半径
-//     miRNAs.forEach(miRNA => {
-//         const miRNANode = nodes.find(node => node.id === miRNA);
-//         if (miRNAtoTFs[miRNA]) {
-//             const TFs = Array.from(miRNAtoTFs[miRNA]);
-//             TFs.forEach((tf, i) => {
-//                 const angle = (2 * Math.PI / TFs.length) * i;
-//                 const x = miRNANode.x + tfRadius * Math.cos(angle);
-//                 const y = miRNANode.y + tfRadius * Math.sin(angle);
-//                 nodes.push({ id: tf, group: "TF", x, y });
-//
-//                 // 连接 TF 和 miRNA
-//                 links.push({ source: tf, target: miRNA });
-//             });
-//         }
-//     });
-//
-//     // 3. 绘制图形
-//     d3.select("#network").selectAll("*").remove();
-//     const svg = d3.select("#network")
-//         .attr("width", width)
-//         .attr("height", height);
-//
-//     // 绘制边
-//     svg.append("g")
-//         .attr("stroke", "#aaa")
-//         .attr("stroke-width", 1.5)
-//         .selectAll("line")
-//         .data(links)
-//         .enter().append("line")
-//         .attr("x1", d => nodes.find(n => n.id === d.source).x)
-//         .attr("y1", d => nodes.find(n => n.id === d.source).y)
-//         .attr("x2", d => nodes.find(n => n.id === d.target).x)
-//         .attr("y2", d => nodes.find(n => n.id === d.target).y);
-//
-//     // 绘制节点
-//     svg.append("g")
-//         .selectAll("circle")
-//         .data(nodes)
-//         .enter().append("circle")
-//         .attr("cx", d => d.x)
-//         .attr("cy", d => d.y)
-//         .attr("r", 8)
-//         .attr("fill", d => d.group === "target" ? "yellow" : d.group === "miRNA" ? "red" : "blue")
-//         .attr("stroke", "#333")
-//         .attr("stroke-width", 1.5);
-//
-//     // 添加节点标签
-//     svg.append("g")
-//         .selectAll("text")
-//         .data(nodes)
-//         .enter().append("text")
-//         .attr("x", d => d.x)
-//         .attr("y", d => d.y - 10)
-//         .attr("text-anchor", "middle")
-//         .attr("font-size", "8px")
-//         .text(d => d.id);
-// }
+
+document.getElementById("toggle-panel-button").addEventListener("click", () => {
+    const panel = document.getElementById("target-panel");
+    const button = document.getElementById("toggle-panel-button");
+
+    // 如果面板当前隐藏，则显示
+    if (panel.style.display === "none" || !panel.style.display) {
+        panel.style.display = "flex"; // 显示面板
+        button.innerHTML = "&lt;"; // 改为向左箭头
+    } else {
+        panel.style.display = "none"; // 隐藏面板
+        button.innerHTML = "&gt;"; // 改为向右箭头
+    }
+});
+
+
 
 
 
