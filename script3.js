@@ -358,7 +358,7 @@ function filterSubcellularLocations() {
     // 将筛选后的 miRNA-target 数据保存到全局变量，供下一步使用
     window.filteredMiRTargetStep1 = filteredMiRTarget;
     // 直接运行后续的miRNA family筛选部分函数
-    filterData();
+    // filterData();
 }
 // dNADC部分
 function filterSubcellularLocations1() {
@@ -401,7 +401,7 @@ function filterSubcellularLocations1() {
     // 将筛选后的 miRNA-target 数据保存到全局变量，供下一步使用
     window.filteredMiRTargetStep1 = filteredMiRTarget;
     // 直接运行后续的miRNA family筛选部分函数
-    filterData();
+    // filterData();
 }
 // rNADC部分
 function filterSubcellularLocations2() {
@@ -440,7 +440,7 @@ function filterSubcellularLocations2() {
     // 将筛选后的 miRNA-target 数据保存到全局变量，供下一步使用
     window.filteredMiRTargetStep1 = filteredMiRTarget;
     // 直接运行后续的miRNA family筛选部分函数
-    filterData();
+    // filterData();
 }
 
 function filterData() {
@@ -585,13 +585,19 @@ function displaySubcellularTable(subcellularCount) {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.value = location;
+
+        selectCell.appendChild(checkbox);
+        row.appendChild(selectCell);
+        tableBody.appendChild(row);
+        // 为复选框绑定事件监听器
+        checkbox.addEventListener('change', () => {
+            console.log(`Checkbox for ${location} changed to ${checkbox.checked}`);
+            filterData(); // 调用 filterData() 函数，实时更新过滤结果
+        });
         // 默认选中 Cytoplasm 和 Cytosol
         if (defaultSelectedLocations.includes(location)) {
             checkbox.checked = true;
         }
-        selectCell.appendChild(checkbox);
-        row.appendChild(selectCell);
-        tableBody.appendChild(row);
     });
 }
 //展示miR family表格
