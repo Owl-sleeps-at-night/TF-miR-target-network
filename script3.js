@@ -949,9 +949,13 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
             return;
         }
         // 在当前图中查找匹配的节点
-        const matchedNode =  nodes.find(node => node.id.toLowerCase().trim() === searchInput.toLowerCase().trim());
+        const matchedNode =  nodes.find(node => node.id.toLowerCase().trim().replace(/_(target|TF|miRNA)$/, "") === searchInput.toLowerCase().trim());
         if (matchedNode) {
-            console.log("Node found:", matchedNode);
+            console.log("Nodes found:", matchedNode);
+            // 遍历所有匹配的节点并应用高亮逻辑
+            // matchedNodes.forEach(matchedNode => {
+            //     highlightMultipleNodes(matchedNode); // 调用高亮节点逻辑
+            // });
             highlightNode(matchedNode); // 调用高亮节点逻辑
         } else {
             alert(`Node "${searchInput}" not found in the network.`);
@@ -1151,6 +1155,7 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
     });
     // 7. 高亮功能
     function highlightNode(selectedNode) {
+        console.log('Selected node:', selectedNode)
         // 获取与当前节点相连的边和节点
         const connectedLinks = links.filter(link => link.source.id === selectedNode.id || link.target.id === selectedNode.id);
         const connectedNodes = new Set(connectedLinks.flatMap(link => [link.source.id, link.target.id]));
@@ -1163,6 +1168,30 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
             .attr("stroke", d => d.id === connectedNodes.has(d.id) ? "#f00" : "#fff") // 高亮当前节点边框
             .attr("stroke-width", d => d.id === connectedNodes.has(d.id) ? 1 : 0.5); // 高亮当前节点加粗边框
     }
+    // 只在搜索节点时才允许使用的特殊情况，允许高亮两个以上节点
+    function highlightMultipleNodes(selectedNodes) {
+        // 获取与选定节点相连的所有边和节点
+        const connectedLinks = links.filter(link =>
+            selectedNodes.some(node => node.id === link.source.id || node.id === link.target.id)
+        );
+
+        // 创建一个集合来存储所有相关节点（选定的节点和它们连接的节点）
+        const connectedNodes = new Set(
+            connectedLinks.flatMap(link => [link.source.id, link.target.id])
+        );
+        // 更新边的样式
+        link.attr("stroke-opacity", d =>
+            connectedNodes.has(d.source.id) && connectedNodes.has(d.target.id) ? 1 : 0.1
+        );
+        // 更新节点样式
+        node.select("circle")
+            .attr("fill-opacity", d => connectedNodes.has(d.id) ? 1 : 0.1)  // 高亮节点透明度变高
+            .attr("stroke-opacity", d => connectedNodes.has(d.id) ? 1 : 0.1) // 非相关节点透明
+            .attr("stroke", d => connectedNodes.has(d.id) ? "#f00" : "#fff") // 高亮节点边框
+            .attr("stroke-width", d => connectedNodes.has(d.id) ? 1 : 0.5);  // 高亮节点加粗边框
+    }
+
+
     // 8. 清除高亮
     function resetHighlight() {
         // 重置边样式
