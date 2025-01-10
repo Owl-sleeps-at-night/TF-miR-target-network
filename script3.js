@@ -446,8 +446,9 @@ function filterSubcellularLocations() {
         // 恢复显示模式为 "full"
         const modeSelect = document.getElementById("mode");
         modeSelect.value = "full";
+        // return;
+        filterSubcellularLocations();
         return;
-        // filterSubcellularLocations();
     }
     // 获取当前条件下的最全的target列表
     updateTargetTable(filteredMiRTarget);
@@ -521,8 +522,11 @@ if (filteredMiRTarget.length === 0) {
     // 恢复显示模式为 "full"
     const modeSelect = document.getElementById("mode");
     modeSelect.value = "full";
+    // return;
+    // 清除之前的数据
+    window.filteredMiRTargetStep1 = []; // 确保清除之前的筛选数据
+    filterSubcellularLocations1();
     return;
-    // filterSubcellularLocations1();
     // // 手动触发 change 事件
     // modeSelect.dispatchEvent(new Event("change"));
 }
@@ -546,6 +550,7 @@ filteredMiRTarget.forEach(item => {
 console.log('Subcellular Locations:', subcellularCount);
 // 将筛选后的 miRNA-target 数据保存到全局变量，供下一步使用
 window.filteredMiRTargetStep1 = filteredMiRTarget;
+console.log()
 // 动态生成勾选框
 displaySubcellularTable(subcellularCount);
 }
@@ -592,13 +597,15 @@ function filterSubcellularLocations2() {
         // 恢复显示模式为 "full"
         const modeSelect = document.getElementById("mode");
         modeSelect.value = "full";
+        // return;
+        filterSubcellularLocations2();
         return;
-        // filterSubcellularLocations2();
         // // 手动触发 change 事件
         // modeSelect.dispatchEvent(new Event("change"));
     }
     // 获取当前条件下的最全的target列表
     updateTargetTable(filteredMiRTarget);
+    console.log('filtered MiRTarget_1:', filteredMiRTarget);
     if (!targetPanel.classList.contains('open')) {
         toggleButton.click();
     }
@@ -668,11 +675,12 @@ function filterData() {
     // 检查是否有数据
     if (filteredMiRTarget.length === 0) {
         alert('No data available after filtering. Please adjust your criteria.');
-        // 恢复显示模式为 "full"
-        const modeSelect = document.getElementById("mode");
-        modeSelect.value = "full";
+        // // 恢复显示模式为 "full"
+        // const modeSelect = document.getElementById("mode");
+        // modeSelect.value = "full";
         // return;
-        filterData();
+        displaySubcellularTable();
+        return;
         // // 手动触发 change 事件
         // modeSelect.dispatchEvent(new Event("change"));
     }
@@ -693,6 +701,7 @@ function filterData() {
     displayMiRFamilyTable(miRFamilies);
     // 更新target的表格
     updateTargetTable(filteredMiRTarget);
+    console.log('filtered MiRTarget_filterData:', filteredMiRTarget);
 }
 
 // 获取miRNA网络，展示网络图
@@ -714,6 +723,7 @@ function applyMiRFamilyFilter() {
     console.log('Filtered miRNA-target by miRNA Family:', filteredMiRTarget);
     // 更新target的表格
     updateTargetTable(filteredMiRTarget);
+    console.log('filtered MiRTarget_filteredMirTarget:', filteredMiRTarget);
     // 获取此时的 miRNA 集合
     const selectedMiRNAs = new Set(filteredMiRTarget.map(item => item.miRNA[0]));
     // 根据当前的 miRNA 集合筛选 TF-miRNA 数据
@@ -758,7 +768,7 @@ document.getElementById("filter2Button").addEventListener("click", () => {
 // -----------
 //展示subcellular表格
 function displaySubcellularTable(subcellularCount) {
-    // console.log('displaysubcellular function loaded.')
+    console.log('displaysubcellular function loaded.')
     const tableBody = document.getElementById('subcellular-table-body');
     const selectAllCheckbox = document.getElementById('selectAllSubcellular');
     tableBody.innerHTML = '';
@@ -968,7 +978,7 @@ function updateTargetTable(filteredMiRTarget) {
                 item.Target_Gene[0], // Map 的键为 Target_Gene（唯一键）
                 {
                     target: item.Target_Gene[0],
-                    subcellularLocation: item.Subcellular_location ? item.Subcellular_location[0] : "No data"
+                    subcellularLocation: item.Subcellular_location ? item.Subcellular_location[0] : "NA"
                 }
             ])
         ).values()
