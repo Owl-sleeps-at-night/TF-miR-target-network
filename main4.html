@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miRNA-target Filtering</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #faf9f4;
+            /*color: #f7f6f2*/
+        }
+        #nadc-buttons {
+            display: block; /* 水平排列按钮 */
+            align-items: center; /* 垂直居中 */
+            justify-content: center; /* 左对齐 */
+            gap: 50px !important; /* 按钮之间的间距 */
+            margin-bottom: 10px;
+        }
+        .nadc-button {
+            display: flex; /* 让内容居中 */
+            align-items: center;
+            justify-content: center;
+            width: 90px !important; /* 强制宽度 */
+            height: 40px; /* 高度 */
+            font-size: 20px !important;
+            font-weight: bold;
+            background-color: #6e0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-sizing: border-box; /* 包括内边距和边框 */
+            overflow: hidden; /* 隐藏溢出的文字 */
+            white-space: nowrap; /* 禁止文字换行 */
+        }
+        .nadc-button:hover {
+            background-color: #fbddaf;
+        }
+        .nadc-button.active {
+            background-color: #ffa319;
+            color: white;
+        }
+        /* 左侧区域 */
+        #sidebar {
+            width: 30%;
+            background-color: #faf9f4;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height:100%;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        #condition-container {
+            display: flex;
+            flex-wrap: nowrap; /* 自动换行（如果宽度不足） */
+            gap: 10px; /* 设置子元素之间的间距 */
+            align-items: center; /* 子元素垂直居中 */
+            justify-content: flex-start; /* 水平左对齐 */
+        }
+        #ART_condition {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* ART 和子元素之间的间距 */
+        }
+        #ART_condition label {
+            margin-right: 5px;
+            font-size: 14px;
+        }
+        #dnadc-filters, #rnadc-filters {
+            display: none;
+            flex-wrap: wrap; /* 自动换行（如果宽度不足） */
+            gap: 10px; /* 设置子元素之间的间距 */
+            align-items: center; /* 子元素垂直居中 */
+            justify-content: flex-start; /* 子元素水平分布 */
+        }
+        /* 下拉菜单样式 */
+        select{
+            width: 70px !important; /* 设置宽度 */
+            padding: 5px;
+            font-size: 14px !important;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+        #filter2Button{
+            display: block; /* 让内容居中 */
+            align-items: center;
+            justify-content: center;
+            width: 150px !important; /* 强制宽度 */
+            height: 60px !important; /* 高度 */
+            font-size: 20px !important;
+            font-weight: bold;
+            background-color: #6e0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-sizing: border-box; /* 包括内边距和边框 */
+            overflow: hidden; /* 隐藏溢出的文字 */
+            white-space: nowrap; /* 禁止文字换行 */
+            margin-bottom: 0 !important;
+        }
+        #filter2Button:hover{
+            background-color:  #ffa319;
+        }
+        /* 弹出中间部分按钮的样式 */
+        #toggle-panel-button {
+            top: 0;
+            background-color: lightgrey;
+            color: #34495E;
+            border: none;
+            right:70%;
+            width: 20px;
+            height: 100%;
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            align-items: center; /* 水平居中 */
+            justify-content: center; /* 垂直居中 */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* 添加阴影 */
+            z-index: 40; /* 确保按钮在面板上方 */
+            position: absolute;
+        }
+        #toggle-panel-button:hover {
+            background-color: #ffa319;
+        }
+        /* 弹出 Target 表格的新栏 */
+        #target-panel {
+            width: 70%;
+            height: 100%;
+            background-color: #faf9f4;
+            border-left: 1px solid #ddd;
+            position: absolute; /* 基于 #sidebar 的定位 */
+            left: 30%;/* 确保从左侧栏右侧弹出 */
+            top: 0;
+            display: none; /* 初始状态不可见 */
+            transition: transform 0.3s ease; /* 平滑动画 */
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+            flex-direction: column;
+            box-sizing: border-box;
+            z-index: 10; /* 确保面板在其他元素之上 */
+        }
+        /*表格的格式设置*/
+        #target-panel.open {
+            display: flex;
+        }
+        #loading-placeholder p {
+            font-size: 14px;
+            color: #555;
+            font-weight: bold;
+        }
+        #loading-placeholder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+            background-color: #faf9f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        #target-panel h3 {
+            margin: 0 0 10px;
+            text-align: center;
+        }
+        #target-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            table-layout: fixed;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        #target-table th, #target-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+            overflow: hidden; /* 防止内容溢出 */
+        }
+        #target-table th {
+            background-color: #faf9f4;
+            text-align: center;
+        }
+        #target-table thead {
+            display: table; /* 保持表头样式 */
+            width: 100%; /* 确保宽度一致 */
+            table-layout: fixed; /* 固定列宽 */
+        }
+        #target-table tbody {
+            display: block;
+            height: calc(90vh - 5vh); /* 限制表格高度 */
+            overflow-y: auto;
+            width: 100%; /* 确保宽度一致 */
+            table-layout: fixed; /* 固定列宽 */
+        }
+        #target-table tbody tr {
+            display: table; /* 保持行样式 */
+            width: 100%;
+            table-layout: fixed; /* 防止列宽不一致 */
+        }
+        #target-table-footer{
+            padding: 10px;
+            font-weight: bold;
+            text-align: left; /* 右对齐统计信息 */
+            background-color: #faf9f4; /* 增加浅色背景 */
+            border-top: 1px solid #ddd;
+        }
+        /* 右侧区域：网络图 */
+        #network-container {
+            width: 70%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: #faf9f4;
+            /*display: none;*/
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            height: 75%;
+            transition: width 0.3s ease;
+            position: absolute;
+        }
+        /* 正常状态的网络图 */
+        #network {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            transition: transform 0.3s ease;
+        }
+        #network-actions {
+            position: absolute;
+            width: 70%;
+            height: 25%;
+            right: 0;
+            bottom: 0;
+            display: flex; /* 水平排列搜索框和下载按钮 */
+            flex-direction:row; /* 如果需要垂直排列，改为 column */
+            gap: 10px; /* 控件之间的间距 */
+            padding: 10px;
+            border-top: 1px solid #ddd; /* 上边框 */
+            background-color: #faf9f4; /* 背景色 */
+            box-sizing: border-box;
+
+            text-align: center; /* 居中对齐 */
+        }
+        #tool-container {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 25px ;
+        }
+        /*其他所有按钮的样式*/
+        button {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            background-color: #6e0000;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 15px;
+
+        }
+        button:hover {
+            background-color: #ffa319;
+        }
+        input[type="text"] {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        /* 图例容器样式 */
+        #legend-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px;
+            background-color: #faf9f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        #legend-columns {
+            display: flex;
+            gap: 30px; /* 两列之间的间距 */
+        }
+        .legend-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* 每个图例之间的间距 */
+        }
+        /* 单个图例项样式 */
+        .legend-item {
+            display: flex; /* 水平排列圆形和文字 */
+            align-items: center; /* 垂直居中 */
+            gap: 10px; /* 圆形和文字之间的间距 */
+            font-size: 14px;
+        }
+        /* 图例中的圆形样式 */
+        .legend-circle {
+            width: 15px; /* 圆形宽度 */
+            height: 15px; /* 圆形高度 */
+            border-radius: 50%; /* 圆形形状 */
+            background-color: #ccc; /* 默认颜色（可以被覆盖） */
+            flex-shrink: 0; /* 防止缩放 */
+        }
+        .legend-line {
+            width: 30px;
+            height: 0;
+            border-top: 3px solid;
+            display: inline-block;
+        }
+        /* 图例中的文字样式 */
+        .legend-label {
+            font-size: 14px; /* 文字大小 */
+            color: black; /* 文字颜色 */
+            font-weight: bold;
+        }
+        /*这部分是TF-miR-target专用的*/
+        #miRFamilyTableContainer {
+            height: 120px; /* 设置固定高度 */
+            overflow-y: auto;  /* 启用垂直滚动条 */
+            border: 1px solid #ddd; /* 添加边框 */
+            margin-top: 10px;
+            padding: 5px;
+        }
+        /*左侧细胞定位表格的样式*/
+        #subcellularTableContainer {
+            height: 120px; /* 设置固定高度 */
+            overflow-y: auto;  /* 启用垂直滚动条 */
+            border: 1px solid #ddd; /* 添加边框 */
+            margin-top: 10px;
+            padding: 5px;
+        }
+        /*左侧按钮的样式*/
+        #sidebar select, #sidebar button {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        #ART_condition,#ART_condition_dnadc{
+            display: flex;
+            align-items: center; /* 垂直居中 */
+            gap: 1px; /* ART: 与按钮的间距 */
+        }
+        #ART_condition label,#ART_condition_dnadc label{
+            display: flex;
+            align-items: center; /* 垂直居中 */
+            gap: 5px; /* 复选框与文本的间距 */
+            font-size: 14px; /* 调整字体大小 */
+            cursor: pointer; /* 鼠标变为手型 */
+        }
+        #ART_condition input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<!-- 左侧区域：筛选条件和按钮 -->
+<div id="sidebar">
+<!--    <h2 class="title" style="font-size: 16px;font-weight: bold">NADC feature regulation network</h2>-->
+    <div id="nadc-buttons" style="display: flex; gap: 10px; margin-bottom: 10px;">
+        <button id="btn-dnadc" class="nadc-button">dNADC</button>
+        <button id="btn-rnadc" class="nadc-button">rNADC</button>
+        <button id="btn-ipredict" class="nadc-button">iPredict</button>
+
+    </div>
+    <div>
+        <label class="title" style="font-size: 20px;font-weight: bold">Step1. Select NADC of interest</label>
+    </div>
+        <!-- 筛选条件 -->
+        <!-- iPredict Filters -->
+        <div id="condition-container" >
+
+            <div>
+                <label for="cell_condition" style="font-size: 16px;font-weight: bold">Group</label>
+                <select id="cell_condition">
+                    <option value="CD4">CD4</option>
+                    <option value="CD8A">CD8A</option>
+                    <option value="CD4CD8A">CD4CD8A</option>
+                </select>
+            </div>
+
+            <div id="ART_condition">
+                <label class="title" style="font-size: 16px;font-weight: bold">ART</label>
+                <div>
+                    <label>
+                        <input type="checkbox" id="ART_yes" data-value="ART" checked="checked">
+                        YES
+                    </label>
+                    <label>
+                        <input type="checkbox" id="ART_no" data-value="nonART">
+                        NO
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label for="cancer_condition" class="title" style="font-size: 16px;font-weight: bold">Cancer</label>
+                <select id="cancer_condition">
+                    <option value="BLCA">BLCA</option>
+                    <option value="BRCA">BRCA</option>
+                    <option value="COAD">COAD</option>
+                    <option value="ESCA">ESCA</option>
+                    <option value="HNSC">HNSC</option>
+                    <option value="KICH">KICH</option>
+                    <option value="KIRC">KIRC</option>
+                    <option value="KIRP">KIRP</option>
+                    <option value="LIHC">LIHC</option>
+                    <option value="LUAD">LUAD</option>
+                    <option value="LUSC">LUSC</option>
+                    <option value="PRAD">PRAD</option>
+                    <option value="READ">READ</option>
+                    <option value="STAD">STAD</option>
+                    <option value="THCA">THCA</option>
+                    <option value="UCEC">UCEC</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- dNADC Filters -->
+        <div id="dnadc-filters" >
+            <label for="dnadc_filter" class="title" style="font-size: 16px;font-weight: bold">Filter</label>
+            <select id="dnadc_filter">
+                <option value="A">All</option>
+                <option value="L">Lasso</option>
+            </select>
+            <div id="ART_condition_dnadc">
+                <label style="font-size: 16px;font-weight: bold">ART</label>
+                <div>
+                    <div>
+                        <label>
+                            <input type="checkbox" id="ART_yes_dnadc" data-value="ART" checked="checked">
+                            YES
+                        </label>
+                        <label>
+                            <input type="checkbox" id="ART_no_dnadc" data-value="nonART">
+                            NO
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <label for="dnadc_cancer_condition" style="font-size: 16px;font-weight: bold">Cancer</label>
+            <select id="dnadc_cancer_condition">
+                <option value="BLCA">BLCA</option>
+                <option value="BRCA">BRCA</option>
+                <option value="COAD">COAD</option>
+                <option value="ESCA">ESCA</option>
+                <option value="HNSC">HNSC</option>
+                <option value="KICH">KICH</option>
+                <option value="KIRC">KIRC</option>
+                <option value="KIRP">KIRP</option>
+                <option value="LIHC">LIHC</option>
+                <option value="LUAD">LUAD</option>
+                <option value="LUSC">LUSC</option>
+                <option value="PRAD">PRAD</option>
+                <option value="READ">READ</option>
+                <option value="STAD">STAD</option>
+                <option value="THCA">THCA</option>
+                <option value="UCEC">UCEC</option>
+            </select>
+        </div>
+
+        <div id="rnadc-filters" >
+            <label for="rnadc_cancer_condition" style="font-size: 16px;font-weight: bold">Cancer</label>
+            <select id="rnadc_cancer_condition">
+                <option value="ACC">ACC</option>
+                <option value="BLCA">BLCA</option>
+                <option value="BRCA">BRCA</option>
+                <option value="CESC">CESC</option>
+                <option value="COAD">COAD</option>
+                <option value="DLBC">DLBC</option>
+                <option value="ESCA">ESCA</option>
+                <option value="KICH">KICH</option>
+                <option value="KIRC">KIRC</option>
+                <option value="KIRP">KIRP</option>
+                <option value="LIHC">LIHC</option>
+                <option value="LUAD">LUAD</option>
+                <option value="LUSC">LUSC</option>
+                <option value="OV">OV</option>
+                <option value="PRAD">PRAD</option>
+                <option value="SKCM">SKCM</option>
+                <option value="STAD">STAD</option>
+                <option value="TGCT">TGCT</option>
+                <option value="THCA">THCA</option>
+                <option value="UCEC">UCEC</option>
+                <option value="UCS">UCS</option>
+            </select>
+        </div>
+
+    <label for="mode" style="font-size: 16px;font-weight: bold">Network display mode</label>
+    <select id="mode">
+        <option value="full">Full</option>
+        <option value="co-regulation">Co-regulation</option>
+    </select>
+
+    <!-- Subcellular Location 信息展示 -->
+    <div class="network filtering table">
+        <label class="title" style="font-size: 20px;font-weight: bold">Step2. Select feature and miRNA of interest</label>
+        <h3>Feature mRNA subcellular location</h3>
+        <div id="subcellularTableContainer">
+        <table>
+            <thead>
+            <tr>
+                <th>Subcellular Location</th>
+                <th>Select</th>
+                <th>
+                    <label>
+                        <input type="checkbox" id="selectAllSubcellular"> <!-- 全选框 -->
+                    </label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="subcellular-table-body"></tbody>
+        </table>
+    </div>
+    <!-- miRNA Family Section -->
+    <div id="miRFamilySection" class="network filtering table">
+        <h3>miRNA family</h3>
+            <div id="miRFamilyTableContainer">
+            <table>
+                <thead id="miRFamilyTableHeader">
+                <tr>
+                    <th>miRNA Family</th>
+                    <th>Select</th>
+                    <th>
+                        <label>
+                            <input type="checkbox" id="selectAllFamilies">
+                        </label>
+                    </th>
+                </tr>
+                </thead>
+                <tbody id="miRFamilyTableBody"></tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+    <button id="filter2Button" >Build Network</button>
+
+</div>
+<!-- 弹出按钮 -->
+<div id="toggle-panel-button">&gt</div>
+<!-- 弹出 Target 表格的新栏 -->
+<div id="target-panel">
+    <h3>Network Target Table</h3>
+    <!-- target表格为空时的占位符 -->
+    <div id="loading-placeholder" style="display: none; text-align: center; padding: 20px;">
+        <p>No target available due to inappropriate selection or a webpage error.</p>
+    </div>
+    <table id="target-table">
+        <thead>
+        <tr>
+            <th>Target</th>
+            <th>mRNA Subcellular Location</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- 动态填充 -->
+        </tbody>
+    </table>
+    <div id="target-table-footer">
+        Total targets: 0
+    </div>
+</div>
+<!-- 网络图区域 -->
+<div id="network-container">
+    <!-- 网络图 -->
+    <svg id="network"></svg>
+</div>
+<div id="network-actions">
+    <!-- 新增搜索节点部分 -->
+    <div id="tool-container">
+            <input type="text" id="node-search-input" placeholder="Enter node name">
+            <button id="search-node-button">Search</button>
+            <button id="download1" style="display: flex">
+                Download miRNA-Target Data
+            </button>
+            <button id="download2" style="display: flex">
+                Download TF-miRNA Data
+            </button>
+            <button id="download3" style="display:none">
+                Download TF-target Data
+            </button>
+    </div>
+    <!-- 图例 -->
+    <div id="legend-container">
+        <div id="legend-columns">
+            <div class="legend-column">
+                <div class="legend-item">
+                    <span class="legend-label">Nodes</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-circle" style="background-color: #f1e0a4;"></span>
+                    <span class="legend-label">Target</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-circle" style="background-color: #a6c8ff;"></span>
+                    <span class="legend-label">miRNA</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-circle" style="background-color: #a3e4a1;"></span>
+                    <span class="legend-label">TF</span>
+                </div>
+            </div>
+            <div class="legend-column">
+                <div class="legend-item">
+                    <span class="legend-label">miRNA-target evidence</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-line" style="border-top: 3px solid #f57f29;"></span>
+                    Western Blot
+                </div>
+                <div class="legend-item">
+                    <span class="legend-line" style="border-top: 3px solid #d45d6a;"></span>
+                    RT-PCR
+                </div>
+                <div class="legend-item">
+                    <span class="legend-line" style="border-top: 3px solid #4098d7;"></span>
+                    Reporter assay
+                </div>
+                <div class="legend-item">
+                    <span class="legend-line" style="border-top: 3px solid grey;"></span>
+                    Other Experiments
+                </div>
+            </div>
+            <div class="legend-column">
+                <div class="legend-item">
+                    <span class="legend-label">TF-target regulation</span>
+                </div>
+                <div class="legend-item">
+                    <img src="line_arrow.svg" alt="Activation arrow" width="50" height="20">
+                    Activation
+                </div>
+                <div class="legend-item">
+                    <img src="dashed_line.svg" alt="Repression arrow" width="50" height="20">
+                    Repression
+                </div>
+                <div class="legend-item">
+                    <img src="dashed_arrow.svg" alt="Activation & Repression arrow" width="50" height="20">
+                    Activation & Repression
+                </div>
+                <div class="legend-item">
+                    <img src="line.svg" alt="Other arrow" width="50" height="20">
+                    Others
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const toggleButton = document.getElementById('toggle-panel-button');
+    const targetPanel = document.getElementById('target-panel');
+    // const networkContainer = document.getElementById('network-container');
+    toggleButton.addEventListener('click', () => {
+        if (targetPanel.style.display === 'none') {
+            targetPanel.style.display = 'flex'; // 显示 target-panel
+            targetPanel.classList.add('open');
+            // networkContainer.style.display='none'; // 隐藏绘图区域
+            toggleButton.innerHTML = '&lt;'; // 改为左箭头
+        } else {
+            targetPanel.style.display = 'none'; // 隐藏 target-panel
+            targetPanel.classList.remove('open');
+            // networkContainer.style.display='flex';// 显示绘图区域
+            toggleButton.innerHTML = '&gt;'; // 改为右箭头
+        }
+    });
+    // //网页窗口初始化部分
+    window.onload = async function () {
+        // await loadData(); // 默认加载ipredict数据
+        // 模拟点击三次 toggle-button
+        const toggleButton = document.getElementById('toggle-panel-button');
+        if (toggleButton) {
+            setTimeout(() => {
+                toggleButton.click(); // 第一次点击
+                setTimeout(() => {
+                    toggleButton.click(); // 第二次点击
+                    setTimeout(() => {
+                        // toggleButton.click(); // 第三次点击
+                    }, );
+                }, );
+            }, );
+        }
+    };
+    // 不同模块切换
+    document.addEventListener('DOMContentLoaded', () => {
+        const ipredictFilters = document.getElementById('condition-container');
+        const dnadcFilters = document.getElementById('dnadc-filters');
+        const rnadcFilters = document.getElementById('rnadc-filters');
+        const buttons = document.querySelectorAll('.nadc-button');
+        // 默认显示 iPredict 筛选界面
+        ipredictFilters.style.display = 'flex';
+        dnadcFilters.style.display = 'none';
+        rnadcFilters.style.display = 'none';
+        // 切换逻辑
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // 清除所有按钮的激活状态
+                buttons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active'); // 激活当前按钮
+                if (button.id === 'btn-ipredict') {
+                    ipredictFilters.style.display = 'flex';
+                    dnadcFilters.style.display = 'none';
+                    rnadcFilters.style.display = 'none';
+                } else if (button.id === 'btn-dnadc') {
+                    ipredictFilters.style.display = 'none';
+                    dnadcFilters.style.display = 'flex';
+                    rnadcFilters.style.display = 'none';
+                } else if (button.id === 'btn-rnadc') {
+                    ipredictFilters.style.display = 'none';
+                    dnadcFilters.style.display = 'none';
+                    rnadcFilters.style.display = 'flex';
+                }
+            });
+        });
+    });
+</script>
+<script src="./script3.js"></script>
+</body>
+</html>

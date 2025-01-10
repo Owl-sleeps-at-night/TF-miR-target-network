@@ -165,19 +165,26 @@ async function runDNADCLogic(){
     document.getElementById("ART_yes_dnadc").checked=true;
     document.getElementById("ART_no_dnadc").checked=false;
     filterSubcellularLocations1();
-
+    document.getElementById("dnadc_filter").addEventListener("change", () => {
+        const modeSelect = document.getElementById("mode");
+        modeSelect.value = "full";
+        document.getElementById("ART_yes_dnadc").checked=false;
+        document.getElementById("ART_no_dnadc").checked=false;
+    });
     // 为YES和NO按钮添加事件监听
-    document.getElementById("ART_yes_dnadc").addEventListener("change", (event) => {
+    document.getElementById("ART_yes_dnadc").addEventListener("click", (event) => {
         if (event.target.checked) {
-            setARTCondition("ART");
+            setARTCondition1("ART");
         }
     });
     document.getElementById("ART_no_dnadc").addEventListener("click", (event) => {
         if (event.target.checked) {
-            setARTCondition("nonART");
+            setARTCondition1("nonART");
         }
     });
-    function setARTCondition(condition) {
+    function setARTCondition1(condition) {
+        const modeSelect = document.getElementById("mode");
+        modeSelect.value = "full";
         ART_condition_dNADC= condition;
         // 更新按钮的状态
         document.getElementById("ART_yes_dnadc").checked=(condition === "ART");
@@ -187,6 +194,8 @@ async function runDNADCLogic(){
     }
     // dNADC部分 监听cancer_condition 下拉框的选择，用户选择后运行筛选函数
     document.getElementById("dnadc_cancer_condition").addEventListener("change", () => {
+        const modeSelect = document.getElementById("mode");
+        modeSelect.value = "full";
         const cancerCondition = document.getElementById("dnadc_cancer_condition").value;
         if (cancerCondition) {
             // 只有用户选择了有效的 cancer_condition 时运行筛选函数
@@ -390,7 +399,7 @@ async function loadData2() {
 //过滤subcellular condition
 // ipredict部分
 function filterSubcellularLocations() {
-    waitingFunction();
+    // waitingFunction();
     // 获取用户选择的筛选条件
     const cellCondition = document.getElementById('cell_condition').value;
     const artCondition = ART_condition;
@@ -438,6 +447,7 @@ function filterSubcellularLocations() {
         const modeSelect = document.getElementById("mode");
         modeSelect.value = "full";
         return;
+        // filterSubcellularLocations();
     }
     // 获取当前条件下的最全的target列表
     updateTargetTable(filteredMiRTarget);
@@ -460,18 +470,14 @@ function filterSubcellularLocations() {
     window.filteredMiRTargetStep1 = filteredMiRTarget;
     // 动态生成勾选框
     displaySubcellularTable(subcellularCount);
-
-    // 直接运行后续的miRNA family筛选部分函数
-    // filterData();
 }
 // dNADC部分
 function filterSubcellularLocations1() {
-    waitingFunction();
+    // waitingFunction();
     // 获取用户选择的筛选条件
     const filterCondition = document.getElementById('dnadc_filter').value;
     const artCondition = ART_condition_dNADC;
     const cancerCondition = document.getElementById('dnadc_cancer_condition').value;
-
     console.log('dNADC - Selected Conditions:', { filterCondition, artCondition, cancerCondition });
     // 筛选 miRNA-target 数据
     let filteredMiRTarget = miRTargetData.filter(item => {
@@ -516,9 +522,13 @@ if (filteredMiRTarget.length === 0) {
     const modeSelect = document.getElementById("mode");
     modeSelect.value = "full";
     return;
+    // filterSubcellularLocations1();
+    // // 手动触发 change 事件
+    // modeSelect.dispatchEvent(new Event("change"));
 }
 // 获取当前条件下的最全的target列表
 updateTargetTable(filteredMiRTarget);
+console.log('filtered MiRTarget:', filteredMiRTarget);
 if (!targetPanel.classList.contains('open')) {
         toggleButton.click();
     }
@@ -538,13 +548,10 @@ console.log('Subcellular Locations:', subcellularCount);
 window.filteredMiRTargetStep1 = filteredMiRTarget;
 // 动态生成勾选框
 displaySubcellularTable(subcellularCount);
-
-// 直接运行后续的miRNA family筛选部分函数
-// filterData();
 }
 // rNADC部分
 function filterSubcellularLocations2() {
-    waitingFunction();
+    // waitingFunction();
     // 获取用户选择的筛选条件
     const cancerCondition = document.getElementById('rnadc_cancer_condition').value;
     console.log('cancer:', cancerCondition);
@@ -586,6 +593,9 @@ function filterSubcellularLocations2() {
         const modeSelect = document.getElementById("mode");
         modeSelect.value = "full";
         return;
+        // filterSubcellularLocations2();
+        // // 手动触发 change 事件
+        // modeSelect.dispatchEvent(new Event("change"));
     }
     // 获取当前条件下的最全的target列表
     updateTargetTable(filteredMiRTarget);
@@ -613,7 +623,7 @@ function filterSubcellularLocations2() {
 }
 
 function filterData() {
-    waitingFunction();
+
     const checkedLocations = Array.from(
         document.querySelectorAll('#subcellular-table-body input[type="checkbox"]:checked')
     ).map(input => input.value);
@@ -661,7 +671,10 @@ function filterData() {
         // 恢复显示模式为 "full"
         const modeSelect = document.getElementById("mode");
         modeSelect.value = "full";
-        return;
+        // return;
+        filterData();
+        // // 手动触发 change 事件
+        // modeSelect.dispatchEvent(new Event("change"));
     }
     // 提取 miR_family 信息
     const miRFamilies = new Map();
@@ -684,7 +697,7 @@ function filterData() {
 
 // 获取miRNA网络，展示网络图
 function applyMiRFamilyFilter() {
-    waitingFunction();
+    // waitingFunction();
     // 获取用户勾选的 miRNA Family 条件
     const selectedFamilies = Array.from(
         document.querySelectorAll('#miRFamilyTableBody input[type="checkbox"]:checked')
@@ -732,7 +745,9 @@ function applyMiRFamilyFilter() {
     // 获取当前条件下的最全的target列表
 }
 document.getElementById("filter2Button").addEventListener("click", () => {
-    updateTargetTable(globalMiRTargetData);
+    console.log('globalMiRTargetData:', globalMiRTargetData);
+    console.log('globalTFMiRNAData:', globalTFMiRNAData);
+    // updateTargetTable(globalMiRTargetData);
     drawDisjointForceDirectedGraph(globalMiRTargetData, globalTFMiRNAData);
     if (targetPanel.classList.contains('open')) {
         toggleButton.click();
@@ -743,6 +758,7 @@ document.getElementById("filter2Button").addEventListener("click", () => {
 // -----------
 //展示subcellular表格
 function displaySubcellularTable(subcellularCount) {
+    // console.log('displaysubcellular function loaded.')
     const tableBody = document.getElementById('subcellular-table-body');
     const selectAllCheckbox = document.getElementById('selectAllSubcellular');
     tableBody.innerHTML = '';
@@ -760,53 +776,87 @@ function displaySubcellularTable(subcellularCount) {
         checkbox.type = 'checkbox';
         checkbox.value = location;
         checkbox.checked = true;
-        // 为复选框绑定事件监听器
-        checkbox.addEventListener('change', () => {
-            // console.log(`Checkbox for ${location} changed to ${checkbox.checked}`);
-            filterData(); // 调用 filterData() 函数，实时更新过滤结果
-            if (!targetPanel.classList.contains('open')) {
-                toggleButton.click();
-            }
-        });
+        // // 为复选框绑定事件监听器
+        // checkbox.addEventListener('change', () => {
+        //     // console.log(`Checkbox for ${location} changed to ${checkbox.checked}`);
+        //     filterData(); // 调用 filterData() 函数，实时更新过滤结果
+        //     if (!targetPanel.classList.contains('open')) {
+        //         toggleButton.click();
+        //     }
+        // });
         selectCell.appendChild(checkbox);
         row.appendChild(selectCell);
         tableBody.appendChild(row);
     });
+    // 手动触发默认全选的逻辑，只执行一次
+    function triggerInitialFilter() {
+        filterData(); // 调用过滤函数
+        if (!targetPanel.classList.contains('open')) {
+            toggleButton.click();
+        }
+    }
     // // 为复选框绑定事件监听器
     // 全选功能
     selectAllCheckbox.checked = true; // 默认选中全选框
     selectAllCheckbox.addEventListener('change', (e) => {
         const checkboxes = tableBody.querySelectorAll('input[type="checkbox"]');
-        // 暂时禁用所有复选框的事件监听器
-        checkboxes.forEach(checkbox => {
-            checkbox.removeEventListener('change', filterData); // 移除监听器
-        });
+        const allChecked = selectAllCheckbox.checked;
+        // // 暂时禁用所有复选框的事件监听器
+        // checkboxes.forEach(checkbox => {
+        //     checkbox.removeEventListener('change', filterData); // 移除监听器
+        // });
         checkboxes.forEach((checkbox,index) => {
             if (index === 0) {
                 checkbox.checked = true;
             } else {
-                checkbox.checked = selectAllCheckbox.checked;
+                checkbox.checked = allChecked;
             }
+
+            // 恢复监听器
+            // checkboxes.forEach(checkbox => {
+            //     checkbox.addEventListener('change', () => {
+            //         filterData();
+            //         if (!targetPanel.classList.contains('open')) {
+            //             toggleButton.click();
+            //         }
+            //     });
+            // });
+            // 手动触发 change 事件
             filterData();
             if (!targetPanel.classList.contains('open')) {
                 toggleButton.click();
             }
-            // 恢复监听器
-            checkboxes.forEach(checkbox => {
-                checkbox.addEventListener('change', () => {
-                    filterData();
-                    if (!targetPanel.classList.contains('open')) {
-                        toggleButton.click();
-                    }
-                });
-            });
         });
+
+        // filterData();
+        // if (!targetPanel.classList.contains('open')) {
+        //     toggleButton.click();
+        // }
     });
-    // 触发默认选中状态的事件
-    const checkboxes = tableBody.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(checkbox => {
-        checkbox.dispatchEvent(new Event('change')); // 手动触发 change 事件监听器
+    // 自动更新全选状态（如果用户手动取消某个复选框）
+    tableBody.addEventListener('change', (event) => {
+        const target =event.target;
+        if (target && target.type === 'checkbox') {
+            const checkboxes = tableBody.querySelectorAll('input[type="checkbox"]');
+
+            // 如果某个复选框状态改变，则更新全选框状态
+            const allChecked = Array.from(checkboxes).every((checkbox, index) => checkbox.checked || index === 0);
+            selectAllCheckbox.checked = allChecked;
+            filterData();
+            if (!targetPanel.classList.contains('open')) {
+                toggleButton.click();
+            }
+        }
+        // const checkboxes = tableBody.querySelectorAll('input[type="checkbox"]');
+        // const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+        // selectAllCheckbox.checked = allChecked;
     });
+    triggerInitialFilter();
+    // // // 触发默认选中状态的事件
+    // const checkboxes = tableBody.querySelectorAll('input[type="checkbox"]');
+    // checkboxes.forEach(checkbox => {
+    //     checkbox.dispatchEvent(new Event('change')); // 手动触发 change 事件监听器
+    // });
 }
 
 //展示miR family表格
@@ -815,7 +865,7 @@ function displayMiRFamilyTable(miRFamilies) {
     tableBody.innerHTML = ''; // 清空内容
     // 提取 miRNA Family 数据，并按首字母排序
     const sortedFamilies = Array.from(miRFamilies.keys()).sort((a, b) => a.localeCompare(b));
-    sortedFamilies.forEach((family,index) => {
+    sortedFamilies.forEach((family, index) => {
         const row = document.createElement('tr');
         // miR-family 名称
         const familyCell = document.createElement('td');
@@ -830,14 +880,21 @@ function displayMiRFamilyTable(miRFamilies) {
         selectCell.appendChild(checkbox);
         row.appendChild(selectCell);
         tableBody.appendChild(row);
-        // 为复选框绑定事件监听器
-        checkbox.addEventListener('change', () => {
-            applyMiRFamilyFilter(); // 调用 filterData() 函数，实时更新过滤结果
-            if (!targetPanel.classList.contains('open')) {
-                toggleButton.click();
-            }
-        });
+        // // 为复选框绑定事件监听器
+        // checkbox.addEventListener('change', () => {
+        //     applyMiRFamilyFilter(); // 调用 filterData() 函数，实时更新过滤结果
+        //     if (!targetPanel.classList.contains('open')) {
+        //         toggleButton.click();
+        //     }
+        // });
     });
+    // 手动触发默认全选的逻辑，只执行一次
+    function triggerInitialFilter() {
+        applyMiRFamilyFilter(); // 调用过滤函数
+        if (!targetPanel.classList.contains('open')) {
+            toggleButton.click();
+        }
+    }
     // // 显示 miRNA-family 信息的表格
     // document.getElementById('miRFamilySection').style.display = 'block';
     // 全选功能的初始化
@@ -846,44 +903,53 @@ function displayMiRFamilyTable(miRFamilies) {
     selectAllCheckbox.addEventListener('change', () => {
         const checkboxes = tableBody.querySelectorAll('input[type="checkbox"]');
         const allChecked = selectAllCheckbox.checked;
-        // // 暂时禁用所有复选框的事件监听器
-        checkboxes.forEach(checkbox => {
-            checkbox.removeEventListener('change', applyMiRFamilyFilter); // 移除监听器
-        });
-        checkboxes.forEach((checkbox,index) => {
+        // // // 暂时禁用所有复选框的事件监听器
+        // checkboxes.forEach(checkbox => {
+        //     checkbox.removeEventListener('change', applyMiRFamilyFilter); // 移除监听器
+        // });
+        checkboxes.forEach((checkbox, index) => {
             if (index === 0) {
                 checkbox.checked = true;
             } else {
                 checkbox.checked = allChecked;
             }
-            // 在状态更新完成后，手动触发一次过滤逻辑
-            applyMiRFamilyFilter();
-            if (!targetPanel.classList.contains('open')) {
-                toggleButton.click();
-            }
-            // 恢复监听器
-            checkboxes.forEach(checkbox => {
-                checkbox.addEventListener('change', () => {
-                    applyMiRFamilyFilter();
-                    if (!targetPanel.classList.contains('open')) {
-                        toggleButton.click();
-                    }
-                });
-            });
-        });
 
+            // 恢复监听器
+            // checkboxes.forEach(checkbox => {
+            //     checkbox.addEventListener('change', () => {
+            //         applyMiRFamilyFilter();
+            //         if (!targetPanel.classList.contains('open')) {
+            //             toggleButton.click();
+            //         }
+            //     });
+            // });
+        });
+        // 在状态更新完成后，手动触发一次过滤逻辑
+        applyMiRFamilyFilter();
+        if (!targetPanel.classList.contains('open')) {
+            toggleButton.click();
+        }
     });
     // 自动更新全选状态（如果用户手动取消某个复选框）
-    tableBody.addEventListener('change', () => {
-        const checkboxes = tableBody.querySelectorAll('input[type="checkbox"]');
-        const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
-        selectAllCheckbox.checked = allChecked;
+    tableBody.addEventListener('change', (event) => {
+        const target = event.target; // 获取触发事件的元素
+        if (target && target.type === 'checkbox') {
+            // 检查事件是否来自复选框
+            applyMiRFamilyFilter(); // 调用过滤逻辑
+            if (!targetPanel.classList.contains('open')) {
+                toggleButton.click(); // 如果面板未展开，自动展开
+            }
+            const checkboxes = tableBody.querySelectorAll('input[type="checkbox"]');
+            const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+            selectAllCheckbox.checked = allChecked;
+        }
     });
     // 手动触发默认选中状态的事件
     const checkboxes = tableBody.querySelectorAll('input[type="checkbox"]');
     checkboxes.forEach(checkbox => {
         checkbox.dispatchEvent(new Event('change')); // 手动触发 change 事件监听器
     });
+    triggerInitialFilter();
 }
 // 更新 Network Target Table 的内容
 function updateTargetTable(filteredMiRTarget) {
@@ -1044,12 +1110,6 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
         target: typeof link.target === "string" ? nodes.find(node => node.id === link.target) : link.target
     }));
     console.log("Generated links:", links);
-
-    // 添加 SVG 容器
-    // svg.setAttribute("width", width);
-    // svg.setAttribute("height", height);
-    // svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
-    // svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
     // 清理旧图
     d3.select("#network").selectAll("*").remove();
     const svg = d3.select("#network")
@@ -1094,7 +1154,6 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
             return d.markerEnd;
         }) // 箭头
         .attr("d", d => calculatePath(d, links)); // 使用 calculatePath 函数计算路径
-
     // 动态调整箭头位置函数
     function getArrowRefX(nodeRadius) {
         return nodeRadius + 25; // 箭头位置基于节点半径 + 一些额外的偏移
@@ -1111,7 +1170,6 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
         .append("path")
         .attr("d", "M0,-5L10,0L0,5")
         .attr("fill", "black");
-
     // 5. 绘制节点组
     const node = g.append("g")
         .attr("class", "node")
@@ -1147,7 +1205,6 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
     node.on("click", (event, d) => {
         event.stopPropagation();
         highlightNode(d);
-
     });
     // 为 SVG 背景添加点击事件，清除高亮
     svg.on("click", () => {
@@ -1174,7 +1231,6 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
         const connectedLinks = links.filter(link =>
             selectedNodes.some(node => node.id === link.source.id || node.id === link.target.id)
         );
-
         // 创建一个集合来存储所有相关节点（选定的节点和它们连接的节点）
         const connectedNodes = new Set(
             connectedLinks.flatMap(link => [link.source.id, link.target.id])
@@ -1190,8 +1246,6 @@ function drawDisjointForceDirectedGraph(filteredMiRTarget, filteredTFWithMultipl
             .attr("stroke", d => connectedNodes.has(d.id) ? "#f00" : "#fff") // 高亮节点边框
             .attr("stroke-width", d => connectedNodes.has(d.id) ? 1 : 0.5);  // 高亮节点加粗边框
     }
-
-
     // 8. 清除高亮
     function resetHighlight() {
         // 重置边样式
