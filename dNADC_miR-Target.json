@@ -7,7 +7,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -17,7 +17,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -27,7 +27,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -37,7 +37,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -47,7 +47,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -57,7 +57,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KICH"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -67,7 +67,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -77,7 +77,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -87,7 +87,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -97,7 +97,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -107,7 +107,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -117,7 +117,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -127,7 +127,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -137,7 +137,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -147,7 +147,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": [" hsa-miR-320b"],
@@ -157,7 +157,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["Mir-4723"],
@@ -167,7 +167,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["Mir-4723"],
@@ -177,7 +177,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["Mir-4723"],
@@ -187,7 +187,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["Mir-4723"],
@@ -197,7 +197,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["Mir-4723"],
@@ -207,7 +207,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-let-7a-5p"],
@@ -2577,7 +2577,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2587,7 +2587,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2597,7 +2597,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2607,7 +2607,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2617,7 +2617,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2627,7 +2627,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KICH"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2637,7 +2637,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2647,7 +2647,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2657,7 +2657,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2667,7 +2667,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2677,7 +2677,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2687,7 +2687,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2697,7 +2697,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-3p"],
@@ -2707,7 +2707,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-101-5p"],
@@ -3077,7 +3077,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-103a-3p "],
@@ -3087,7 +3087,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-103a-3p "],
@@ -3097,7 +3097,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-103a-3p "],
@@ -3107,7 +3107,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KICH"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-103a-3p "],
@@ -3117,7 +3117,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-103a-3p "],
@@ -3127,7 +3127,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-103a-3p "],
@@ -3137,7 +3137,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-103a-3p "],
@@ -3147,7 +3147,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-103a-3p "],
@@ -3157,7 +3157,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-103a-3p "],
@@ -3167,7 +3167,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-106a-5p"],
@@ -4507,7 +4507,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-124-3p"],
@@ -4517,7 +4517,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-124-3p"],
@@ -4527,7 +4527,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-124-3p"],
@@ -4537,7 +4537,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-124-3p"],
@@ -4547,7 +4547,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-124-3p"],
@@ -4557,7 +4557,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-124-3p"],
@@ -4567,7 +4567,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-124-3p"],
@@ -4577,7 +4577,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-124-3p"],
@@ -4587,7 +4587,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-124-3p"],
@@ -4597,7 +4597,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-124-3p"],
@@ -4607,7 +4607,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-1246"],
@@ -5087,7 +5087,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5097,7 +5097,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5107,7 +5107,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5117,7 +5117,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5127,7 +5127,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5137,7 +5137,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5147,7 +5147,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5157,7 +5157,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5167,7 +5167,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5177,7 +5177,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5187,7 +5187,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5197,7 +5197,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5207,7 +5207,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5217,7 +5217,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5227,7 +5227,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5237,7 +5237,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5247,7 +5247,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5257,7 +5257,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KICH"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5267,7 +5267,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5277,7 +5277,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5287,7 +5287,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5297,7 +5297,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5307,7 +5307,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5317,7 +5317,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5327,7 +5327,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5337,7 +5337,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Cytosol,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5347,7 +5347,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5357,7 +5357,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KICH"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-3p"],
@@ -5367,7 +5367,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-126-5p"],
@@ -6207,7 +6207,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-133a-3p"],
@@ -6217,7 +6217,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-133a-3p"],
@@ -6227,7 +6227,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-133a-3p"],
@@ -6237,7 +6237,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-133a-3p"],
@@ -6247,7 +6247,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-133a-3p"],
@@ -6257,7 +6257,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-133a-3p"],
@@ -6267,7 +6267,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-133a-3p"],
@@ -6277,7 +6277,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-133a-3p"],
@@ -6287,7 +6287,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-133a-3p"],
@@ -6297,7 +6297,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-133a-3p"],
@@ -6307,7 +6307,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-133a-3p"],
@@ -6317,7 +6317,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-135a-5p"],
@@ -7057,7 +7057,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7067,7 +7067,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7077,7 +7077,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7087,7 +7087,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7097,7 +7097,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7107,7 +7107,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7117,7 +7117,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7127,7 +7127,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7137,7 +7137,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7147,7 +7147,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7157,7 +7157,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7167,7 +7167,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7177,7 +7177,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7187,7 +7187,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7197,7 +7197,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7207,7 +7207,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7217,7 +7217,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7227,7 +7227,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KICH"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7237,7 +7237,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7247,7 +7247,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7257,7 +7257,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7267,7 +7267,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7277,7 +7277,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7287,7 +7287,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7297,7 +7297,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7307,7 +7307,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-140-3p"],
@@ -7317,7 +7317,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-141-3p"],
@@ -13417,7 +13417,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13427,7 +13427,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13437,7 +13437,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13447,7 +13447,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13457,7 +13457,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13467,7 +13467,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["KICH"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13477,7 +13477,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13487,7 +13487,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13497,7 +13497,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13507,7 +13507,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13517,7 +13517,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13527,7 +13527,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13537,7 +13537,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13547,7 +13547,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13557,7 +13557,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13567,7 +13567,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13577,7 +13577,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Cytosol,Extracellular vesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13587,7 +13587,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytosol,Extracellular vesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13597,7 +13597,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Cytosol,Extracellular vesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13607,7 +13607,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Cytosol,Extracellular vesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13617,7 +13617,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["Cytosol,Extracellular vesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13627,7 +13627,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Cytosol,Extracellular vesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13637,7 +13637,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Cytosol,Extracellular vesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-183-5p"],
@@ -13647,7 +13647,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Cytosol,Extracellular vesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-185-3p"],
@@ -16567,7 +16567,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16577,7 +16577,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16587,7 +16587,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16597,7 +16597,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16607,7 +16607,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16617,7 +16617,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16627,7 +16627,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16637,7 +16637,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16647,7 +16647,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16657,7 +16657,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Endoplasmic reticulum"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16667,7 +16667,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16677,7 +16677,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16687,7 +16687,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16697,7 +16697,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16707,7 +16707,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16717,7 +16717,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KICH"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16727,7 +16727,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16737,7 +16737,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16747,7 +16747,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16757,7 +16757,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16767,7 +16767,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16777,7 +16777,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16787,7 +16787,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16797,7 +16797,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["No data"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16807,7 +16807,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16817,7 +16817,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16827,7 +16827,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16837,7 +16837,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16847,7 +16847,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16857,7 +16857,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16867,7 +16867,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16877,7 +16877,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16887,7 +16887,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16897,7 +16897,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16907,7 +16907,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16917,7 +16917,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16927,7 +16927,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16937,7 +16937,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-203a-3p"],
@@ -16947,7 +16947,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-204-5p"],
@@ -25887,7 +25887,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -25897,7 +25897,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -25907,7 +25907,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -25917,7 +25917,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -25927,7 +25927,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -25937,7 +25937,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["KICH"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -25947,7 +25947,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -25957,7 +25957,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -25967,7 +25967,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -25977,7 +25977,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -25987,7 +25987,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -25997,7 +25997,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -26007,7 +26007,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -26017,7 +26017,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -26027,7 +26027,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -26037,7 +26037,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Extracellular exosome,Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302c-3p"],
@@ -26047,7 +26047,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-302d-3p"],
@@ -32887,7 +32887,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-383-5p"],
@@ -32897,7 +32897,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-383-5p"],
@@ -32907,7 +32907,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KICH"],
     "Subcellular_location": ["Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-383-5p"],
@@ -32917,7 +32917,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-383-5p"],
@@ -32927,7 +32927,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-383-5p"],
@@ -32937,7 +32937,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-383-5p"],
@@ -32947,7 +32947,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-383-5p"],
@@ -32957,7 +32957,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Microvesicle"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-411-3p"],
@@ -35787,7 +35787,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35797,7 +35797,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35807,7 +35807,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35817,7 +35817,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35827,7 +35827,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35837,7 +35837,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KICH"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35847,7 +35847,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35857,7 +35857,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35867,7 +35867,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35877,7 +35877,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35887,7 +35887,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35897,7 +35897,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35907,7 +35907,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35917,7 +35917,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35927,7 +35927,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-455-3p"],
@@ -35937,7 +35937,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["hsa-miR-4723-5p"],
@@ -42107,7 +42107,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-153"],
@@ -42117,7 +42117,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-153"],
@@ -42127,7 +42127,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-153"],
@@ -42137,7 +42137,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-153"],
@@ -42147,7 +42147,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-153"],
@@ -42157,7 +42157,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-153"],
@@ -42167,7 +42167,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-153"],
@@ -42177,7 +42177,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-153"],
@@ -42187,7 +42187,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-153"],
@@ -42197,7 +42197,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-153"],
@@ -42207,7 +42207,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-153"],
@@ -42217,7 +42217,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42227,7 +42227,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42237,7 +42237,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42247,7 +42247,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42257,7 +42257,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42267,7 +42267,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42277,7 +42277,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["KIRC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42287,7 +42287,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42297,7 +42297,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42307,7 +42307,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["LUAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42317,7 +42317,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42327,7 +42327,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42337,7 +42337,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42347,7 +42347,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["miR-22"],
@@ -42357,7 +42357,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Cytosol"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["mmu-miR-24-2-5p"],
@@ -42527,7 +42527,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BLCA"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42537,7 +42537,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["BRCA"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42547,7 +42547,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["COAD"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42557,7 +42557,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["ESCA"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42567,7 +42567,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["HNSC"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42577,7 +42577,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KICH"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42587,7 +42587,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["KIRP"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42597,7 +42597,7 @@
     "filter_condition": ["L"],
     "cancer_condition": ["LIHC"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42607,7 +42607,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["LUSC"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42617,7 +42617,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["PRAD"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42627,7 +42627,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["READ"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42637,7 +42637,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["STAD"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42647,7 +42647,7 @@
     "filter_condition": ["A"],
     "cancer_condition": ["THCA"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   },
   {
     "miRNA": ["ssc-miR-671-5p"],
@@ -42657,6 +42657,6 @@
     "filter_condition": ["A"],
     "cancer_condition": ["UCEC"],
     "Subcellular_location": ["Cytoplasm"],
-    "miR_family": ["Others"]
+    "miR_family": ["No data"]
   }
 ]
