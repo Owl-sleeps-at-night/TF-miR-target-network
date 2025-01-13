@@ -993,7 +993,7 @@
         // 默认使用script3即TF-miRNA-target的逻辑
         const defaultButton = document.getElementById('btn-TF-miR-target');
         defaultButton.classList.add('active');
-        loadScript('./script3.js',() =>{
+        loadScript('./script_TFmiRtarget.js',() =>{
             if (typeof initializeScript3 === 'function') {
                 initializeScript3();
             } else {
