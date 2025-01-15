@@ -1,0 +1,1037 @@
+[
+  {
+    "TF": ["AP-1"],
+    "miRNA": ["hsa-mir-206"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["APEX1"],
+    "miRNA": ["hsa-mir-133b"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["AR"],
+    "miRNA": ["hsa-mir-133b"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["ASCL2"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["ASH1L"],
+    "miRNA": ["hsa-mir-375"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["ATF2"],
+    "miRNA": ["hsa-mir-320a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["ATF2"],
+    "miRNA": ["hsa-mir-548p"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["ATOH1"],
+    "miRNA": ["hsa-mir-375"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["BACH1"],
+    "miRNA": ["hsa-mir-375"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["CBX4"],
+    "miRNA": ["hsa-mir-137"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["CDK"],
+    "miRNA": ["hsa-mir-449a"],
+    "relation": ["auto-regulatory feedback circuit"]
+  },
+  {
+    "TF": ["CEBPA"],
+    "miRNA": ["hsa-mir-181a"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["CEBPB"],
+    "miRNA": ["hsa-mir-198"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["CEBPD"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["CREB1"],
+    "miRNA": ["hsa-mir-1290"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["CREB1"],
+    "miRNA": ["hsa-mir-181a"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["CREB1"],
+    "miRNA": ["hsa-mir-320a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["CREB1"],
+    "miRNA": ["hsa-mir-630"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["CREBBP"],
+    "miRNA": ["hsa-mir-1246"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["CREM"],
+    "miRNA": ["hsa-mir-375"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["CTCF"],
+    "miRNA": ["hsa-mir-137"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["CTCF"],
+    "miRNA": ["hsa-mir-375"],
+    "relation": ["Repression,Regulation"]
+  },
+  {
+    "TF": ["DNMT1"],
+    "miRNA": ["hsa-mir-184"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["DNMT1"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression(feedback)"]
+  },
+  {
+    "TF": ["DNMT3A"],
+    "miRNA": ["hsa-mir-133b"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["DNMT3B"],
+    "miRNA": ["hsa-mir-217"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["E2F1"],
+    "miRNA": ["hsa-mir-107"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["E2F1"],
+    "miRNA": ["hsa-mir-184"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["E2F1"],
+    "miRNA": ["hsa-mir-375"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["E2F1"],
+    "miRNA": ["hsa-mir-449a"],
+    "relation": ["auto-regulatory feedback circuit,Activation"]
+  },
+  {
+    "TF": ["EED"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["EGR1"],
+    "miRNA": ["hsa-mir-596"],
+    "relation": ["Regulation"]
+  },
+  {
+    "TF": ["ELK1"],
+    "miRNA": ["hsa-mir-181a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["ELK1"],
+    "miRNA": ["hsa-mir-320a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["EP300"],
+    "miRNA": ["hsa-mir-1246"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["EP300"],
+    "miRNA": ["hsa-mir-451b"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["ESR1"],
+    "miRNA": ["hsa-mir-575"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["ETS1"],
+    "miRNA": ["hsa-mir-320a"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["ETV6"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["EZH2"],
+    "miRNA": ["hsa-mir-137"],
+    "relation": ["Repression,Regulation"]
+  },
+  {
+    "TF": ["EZH2"],
+    "miRNA": ["hsa-mir-181a"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["EZH2"],
+    "miRNA": ["hsa-mir-217"],
+    "relation": ["Regulation"]
+  },
+  {
+    "TF": ["EZH2"],
+    "miRNA": ["hsa-mir-320a"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["EZH2"],
+    "miRNA": ["hsa-mir-326"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["EZH2"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression(feedback)"]
+  },
+  {
+    "TF": ["EZH2"],
+    "miRNA": ["hsa-mir-484"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["EZH2"],
+    "miRNA": ["hsa-mir-622"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["FOXD3"],
+    "miRNA": ["hsa-mir-137"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["FOXD3"],
+    "miRNA": ["hsa-mir-496"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["FOXF2"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["FOXJ1"],
+    "miRNA": ["hsa-mir-449a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["FOXM1"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["FOXO1"],
+    "miRNA": ["hsa-mir-449a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["FOXO3"],
+    "miRNA": ["hsa-mir-622"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["FOXP3"],
+    "miRNA": ["hsa-mir-198"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["GABPA"],
+    "miRNA": ["hsa-mir-1246"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["GATA4"],
+    "miRNA": ["hsa-mir-320a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["GATA6"],
+    "miRNA": ["hsa-mir-520b"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["GRHL2"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["HDAC1"],
+    "miRNA": ["hsa-mir-326"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["HDAC1"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["HDAC2"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["HDAC4"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["HIF1A"],
+    "miRNA": ["hsa-mir-107"],
+    "relation": ["Activation(feedback)"]
+  },
+  {
+    "TF": ["HIF1A"],
+    "miRNA": ["hsa-mir-326"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["HIF1A"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Activation(feedback)"]
+  },
+  {
+    "TF": ["HIF1A"],
+    "miRNA": ["hsa-mir-448"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["HIF1A"],
+    "miRNA": ["hsa-mir-559"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["HIF1A"],
+    "miRNA": ["hsa-mir-646"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["HNF4A"],
+    "miRNA": ["hsa-mir-496"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["HNF4A"],
+    "miRNA": ["hsa-mir-543"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["HOXB9"],
+    "miRNA": ["hsa-mir-765"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["HOXD9"],
+    "miRNA": ["hsa-mir-451a"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["IRF4"],
+    "miRNA": ["hsa-mir-636"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["JUN"],
+    "miRNA": ["hsa-mir-184"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["JUN"],
+    "miRNA": ["hsa-mir-3188"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["JUN"],
+    "miRNA": ["hsa-mir-320b"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["JUN"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression(feedback)"]
+  },
+  {
+    "TF": ["JUN"],
+    "miRNA": ["hsa-mir-5188"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["JUN"],
+    "miRNA": ["hsa-mir-630"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["KDM5B"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["KDM6B"],
+    "miRNA": ["hsa-mir-1246"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["KLF4"],
+    "miRNA": ["hsa-mir-206"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["KLF4"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Activation(feedback)"]
+  },
+  {
+    "TF": ["KLF5"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["KLF8"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["LIN28A"],
+    "miRNA": ["hsa-mir-107"],
+    "relation": ["Repression(feedback)"]
+  },
+  {
+    "TF": ["MAX"],
+    "miRNA": ["hsa-mir-181a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["MECP2"],
+    "miRNA": ["hsa-mir-137"],
+    "relation": ["Regulation"]
+  },
+  {
+    "TF": ["MECP2"],
+    "miRNA": ["hsa-mir-184"],
+    "relation": ["Repression(feedback)"]
+  },
+  {
+    "TF": ["MXI1"],
+    "miRNA": ["hsa-mir-300"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["MYB"],
+    "miRNA": ["hsa-mir-1258"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["MYB"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Activation(feedback)"]
+  },
+  {
+    "TF": ["MYB"],
+    "miRNA": ["hsa-mir-520h"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["MYB"],
+    "miRNA": ["hsa-mir-601"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["MYC"],
+    "miRNA": ["hsa-mir-137"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["MYC"],
+    "miRNA": ["hsa-mir-184"],
+    "relation": ["Repression(feedback)"]
+  },
+  {
+    "TF": ["MYC"],
+    "miRNA": ["hsa-mir-326"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["MYC"],
+    "miRNA": ["hsa-mir-3648"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["MYC"],
+    "miRNA": ["hsa-mir-484"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["MYCN"],
+    "miRNA": ["hsa-mir-320a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["MYCN"],
+    "miRNA": ["hsa-mir-421"],
+    "relation": ["Regulation"]
+  },
+  {
+    "TF": ["MYCN"],
+    "miRNA": ["hsa-mir-760"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["MYF5"],
+    "miRNA": ["hsa-mir-206"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["MYF6"],
+    "miRNA": ["hsa-mir-206"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["MYOCD"],
+    "miRNA": ["hsa-mir-206"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["MYOD1"],
+    "miRNA": ["hsa-mir-206"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["MYOG"],
+    "miRNA": ["hsa-mir-133b"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["MYOG"],
+    "miRNA": ["hsa-mir-206"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["NF-Y"],
+    "miRNA": ["hsa-mir-181a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["NF1"],
+    "miRNA": ["hsa-mir-217"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["NFE2L2"],
+    "miRNA": ["hsa-mir-206"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["NFKB1"],
+    "miRNA": ["hsa-mir-2909"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["NFKB1"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["NFKB1"],
+    "miRNA": ["hsa-mir-4454"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["NFKB1"],
+    "miRNA": ["hsa-mir-448"],
+    "relation": ["Repression,Activation"]
+  },
+  {
+    "TF": ["NFKB1"],
+    "miRNA": ["hsa-mir-612"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["NFKB1"],
+    "miRNA": ["hsa-mir-650"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["NR1H3"],
+    "miRNA": ["hsa-mir-206"],
+    "relation": ["Repression(feedback)"]
+  },
+  {
+    "TF": ["NR2E1"],
+    "miRNA": ["hsa-mir-137"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["OGG1"],
+    "miRNA": ["hsa-mir-133b"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["PAX5"],
+    "miRNA": ["hsa-mir-648"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["PBX1"],
+    "miRNA": ["hsa-mir-650"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["PELP1"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["POU2F2"],
+    "miRNA": ["hsa-mir-198"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["POU5F1"],
+    "miRNA": ["hsa-mir-1246"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["PPARA"],
+    "miRNA": ["hsa-mir-107"],
+    "relation": ["Regulation"]
+  },
+  {
+    "TF": ["PPARG"],
+    "miRNA": ["hsa-mir-613"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["RB1"],
+    "miRNA": ["hsa-mir-449a"],
+    "relation": ["auto-regulatory feedback circuit"]
+  },
+  {
+    "TF": ["RELA"],
+    "miRNA": ["hsa-mir-802"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["REST"],
+    "miRNA": ["hsa-mir-133b"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["REST"],
+    "miRNA": ["hsa-mir-137"],
+    "relation": ["Regulation"]
+  },
+  {
+    "TF": ["REST"],
+    "miRNA": ["hsa-mir-448"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["RPS6KA5"],
+    "miRNA": ["hsa-mir-181a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["RUNX1"],
+    "miRNA": ["hsa-mir-484"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["RUNX2"],
+    "miRNA": ["hsa-mir-2861"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["SMAD2"],
+    "miRNA": ["hsa-mir-300"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["SMAD2"],
+    "miRNA": ["hsa-mir-520e"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["SMAD3"],
+    "miRNA": ["hsa-mir-520e"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["SNAI1"],
+    "miRNA": ["hsa-mir-375"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["SNAI1"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["SNAI1"],
+    "miRNA": ["hsa-mir-543"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["SNAI2"],
+    "miRNA": ["hsa-mir-137"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["SNAI2"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["SOX2"],
+    "miRNA": ["hsa-mir-137"],
+    "relation": ["Regulation"]
+  },
+  {
+    "TF": ["SOX4"],
+    "miRNA": ["hsa-mir-1269a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["SP1"],
+    "miRNA": ["hsa-mir-320a"],
+    "relation": ["Activation,Repression"]
+  },
+  {
+    "TF": ["SP1"],
+    "miRNA": ["hsa-mir-326"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["SP1"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Activation(feedback),Repression(feedback)"]
+  },
+  {
+    "TF": ["SP1"],
+    "miRNA": ["hsa-mir-630"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["SPDEF"],
+    "miRNA": ["hsa-mir-448"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["SREBF1"],
+    "miRNA": ["hsa-mir-107"],
+    "relation": ["Regulation"]
+  },
+  {
+    "TF": ["SREBF1"],
+    "miRNA": ["hsa-mir-613"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["SRF"],
+    "miRNA": ["hsa-mir-206"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["STAT3"],
+    "miRNA": ["hsa-mir-1254"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["STAT3"],
+    "miRNA": ["hsa-mir-181a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["STAT3"],
+    "miRNA": ["hsa-mir-184"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["STAT3"],
+    "miRNA": ["hsa-mir-384"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["STAT3"],
+    "miRNA": ["hsa-mir-543"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["SUZ12"],
+    "miRNA": ["hsa-mir-217"],
+    "relation": ["Regulation"]
+  },
+  {
+    "TF": ["TAL1"],
+    "miRNA": ["hsa-mir-181a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TAL1"],
+    "miRNA": ["hsa-mir-620"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["TBX1"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TCF3"],
+    "miRNA": ["hsa-mir-320a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TCF4"],
+    "miRNA": ["hsa-mir-484"],
+    "relation": ["Regulation"]
+  },
+  {
+    "TF": ["TCF4"],
+    "miRNA": ["hsa-mir-940"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TFAP2A"],
+    "miRNA": ["hsa-mir-638"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["TGFB1"],
+    "miRNA": ["hsa-mir-217"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TGFB1"],
+    "miRNA": ["hsa-mir-421"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TGFB1"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["TNFSF12"],
+    "miRNA": ["hsa-mir-133b"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["TNFSF12"],
+    "miRNA": ["hsa-mir-206"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["TP53"],
+    "miRNA": ["hsa-mir-107"],
+    "relation": ["Regulation(feedback),Activation(feedback)"]
+  },
+  {
+    "TF": ["TP53"],
+    "miRNA": ["hsa-mir-1204"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TP53"],
+    "miRNA": ["hsa-mir-1246"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TP53"],
+    "miRNA": ["hsa-mir-181a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TP53"],
+    "miRNA": ["hsa-mir-184"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TP53"],
+    "miRNA": ["hsa-mir-198"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TP53"],
+    "miRNA": ["hsa-mir-300"],
+    "relation": ["Activation(feedback)"]
+  },
+  {
+    "TF": ["TP53"],
+    "miRNA": ["hsa-mir-3662"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["TP53"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TP53"],
+    "miRNA": ["hsa-mir-4521"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["TP63"],
+    "miRNA": ["hsa-mir-1204"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TP63"],
+    "miRNA": ["hsa-mir-1246"],
+    "relation": ["Activation(feedback)"]
+  },
+  {
+    "TF": ["TP63"],
+    "miRNA": ["hsa-mir-133b"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TP63"],
+    "miRNA": ["hsa-mir-181a"],
+    "relation": ["Repression,Regulation"]
+  },
+  {
+    "TF": ["TP63"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TP63"],
+    "miRNA": ["hsa-mir-630"],
+    "relation": ["Regulation"]
+  },
+  {
+    "TF": ["TP73"],
+    "miRNA": ["hsa-mir-1204"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TP73"],
+    "miRNA": ["hsa-mir-1246"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TP73"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["TWIST1"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["XBP1"],
+    "miRNA": ["hsa-mir-346"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["YY1"],
+    "miRNA": ["hsa-mir-137"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["YY1"],
+    "miRNA": ["hsa-mir-181a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["YY1"],
+    "miRNA": ["hsa-mir-320a"],
+    "relation": ["Activation"]
+  },
+  {
+    "TF": ["YY1"],
+    "miRNA": ["hsa-mir-449a"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["ZBTB7A"],
+    "miRNA": ["hsa-mir-137"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["ZEB1"],
+    "miRNA": ["hsa-mir-107"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["ZEB1"],
+    "miRNA": ["hsa-mir-206"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["ZEB1"],
+    "miRNA": ["hsa-mir-320a"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["ZEB1"],
+    "miRNA": ["hsa-mir-375"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["ZEB1"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression(feedback)"]
+  },
+  {
+    "TF": ["ZEB1"],
+    "miRNA": ["hsa-mir-543"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["ZEB2"],
+    "miRNA": ["hsa-mir-107"],
+    "relation": ["Repression"]
+  },
+  {
+    "TF": ["ZEB2"],
+    "miRNA": ["hsa-mir-429"],
+    "relation": ["Repression(feedback),Repression"]
+  },
+  {
+    "TF": ["calcineurin"],
+    "miRNA": ["hsa-mir-133b"],
+    "relation": ["Repression"]
+  }
+]
