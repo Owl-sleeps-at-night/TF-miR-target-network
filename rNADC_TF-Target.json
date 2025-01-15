@@ -1,0 +1,3102 @@
+[
+  {
+    "TF": ["AR"],
+    "Target_Gene": ["EGFR"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Erb-b2 receptor tyrosine kinases"],
+    "cancer_condition": ["LUSC"]
+  },
+  {
+    "TF": ["AR"],
+    "Target_Gene": ["EGFR"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Erb-b2 receptor tyrosine kinases"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["AR"],
+    "Target_Gene": ["ERBB2"],
+    "regulation": ["Activation,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["CD molecules|Minor histocompatibility antigens|Erb-b2 receptor tyrosine kinases|MicroRNA protein coding host genes"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["BCL6"],
+    "Target_Gene": ["CCND2"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Cyclins"],
+    "cancer_condition": ["DLBC"]
+  },
+  {
+    "TF": ["BDP1"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["CEBPA"],
+    "Target_Gene": ["MYC"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["CEBPB"],
+    "Target_Gene": ["S100A9"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["S100 calcium binding proteins|EF-hand domain containing"],
+    "cancer_condition": ["SKCM"]
+  },
+  {
+    "TF": ["CREB1"],
+    "Target_Gene": ["ERBB2"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["CD molecules|Minor histocompatibility antigens|Erb-b2 receptor tyrosine kinases|MicroRNA protein coding host genes"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["CREBBP"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["ACC"]
+  },
+  {
+    "TF": ["CREBBP"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["CREBBP"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["E2F1"],
+    "Target_Gene": ["CDKN2A"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["E2F1"],
+    "Target_Gene": ["PCNA"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["E2F1"],
+    "Target_Gene": ["VEGFA"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["VEGF family"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["E2F5"],
+    "Target_Gene": ["MYC"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["EP300"],
+    "Target_Gene": ["MYC"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["EP300"],
+    "Target_Gene": ["PCNA"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["EP300"],
+    "Target_Gene": ["VEGFA"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["VEGF family"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["ESR1"],
+    "Target_Gene": ["CCND1"],
+    "regulation": ["Activation,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Cyclins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["ESR1"],
+    "Target_Gene": ["KRT19"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["ESR1"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["ACC"]
+  },
+  {
+    "TF": ["ESR1"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["ESR1"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["ESR1"],
+    "Target_Gene": ["VEGFA"],
+    "regulation": ["Activation,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["VEGF family"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["ESRRA"],
+    "Target_Gene": ["NR2F6"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Nuclear receptor subfamily 2 group F"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["ETS2"],
+    "Target_Gene": ["MYC"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["EZH2"],
+    "Target_Gene": ["CDKN2A"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["EZH2"],
+    "Target_Gene": ["MYC"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["EZH2"],
+    "Target_Gene": ["PCNA"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["FOS"],
+    "Target_Gene": ["MYC"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["FOXA1"],
+    "Target_Gene": ["MYC"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["FOXO3"],
+    "Target_Gene": ["CCND2"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Cyclins"],
+    "cancer_condition": ["DLBC"]
+  },
+  {
+    "TF": ["FOXP2"],
+    "Target_Gene": ["MET"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Receptor tyrosine kinases|IPT domain containing"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["GATA1"],
+    "Target_Gene": ["MUC1"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["GATA3"],
+    "Target_Gene": ["GATA3"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["GATA zinc finger domain containing"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["GATA3"],
+    "Target_Gene": ["MUC1"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["HDAC1"],
+    "Target_Gene": ["CDKN2A"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["HDAC1"],
+    "Target_Gene": ["PCNA"],
+    "regulation": ["Repression,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["HDAC1"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["ACC"]
+  },
+  {
+    "TF": ["HDAC1"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["HDAC1"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["HDAC2"],
+    "Target_Gene": ["VEGFA"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["VEGF family"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["JUN"],
+    "Target_Gene": ["MYC"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["JUN"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Repression,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["ACC"]
+  },
+  {
+    "TF": ["JUN"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Repression,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["JUN"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Repression,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["KLF4"],
+    "Target_Gene": ["CCND1"],
+    "regulation": ["Activation,Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Cyclins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["KLF4"],
+    "Target_Gene": ["KRT19"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["KLF4"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Activation,Repression,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["ACC"]
+  },
+  {
+    "TF": ["KLF4"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Activation,Repression,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["KLF4"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Activation,Repression,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["MECP2"],
+    "Target_Gene": ["CCND1"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Cyclins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["MITF"],
+    "Target_Gene": ["KIT"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Receptor tyrosine kinases|CD molecules|Immunoglobulin like domain containing"],
+    "cancer_condition": ["SKCM"]
+  },
+  {
+    "TF": ["MYB"],
+    "Target_Gene": ["ERBB2"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["CD molecules|Minor histocompatibility antigens|Erb-b2 receptor tyrosine kinases|MicroRNA protein coding host genes"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["MYC"],
+    "Target_Gene": ["MME"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|M13 metallopeptidases"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["NANOG"],
+    "Target_Gene": ["POU5F1"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["POU class homeoboxes and pseudogenes"],
+    "cancer_condition": ["TGCT"]
+  },
+  {
+    "TF": ["NFYA"],
+    "Target_Gene": ["STK11"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["NKX2-1"],
+    "Target_Gene": ["STK11"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["NR2E3"],
+    "Target_Gene": ["ESR1"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Estrogen receptors"],
+    "cancer_condition": ["UCS"]
+  },
+  {
+    "TF": ["NR2F2"],
+    "Target_Gene": ["POU5F1"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["POU class homeoboxes and pseudogenes"],
+    "cancer_condition": ["TGCT"]
+  },
+  {
+    "TF": ["PAX5"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Activation,Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["PGR"],
+    "Target_Gene": ["EGFR"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Erb-b2 receptor tyrosine kinases"],
+    "cancer_condition": ["LUSC"]
+  },
+  {
+    "TF": ["PGR"],
+    "Target_Gene": ["EGFR"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Erb-b2 receptor tyrosine kinases"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["PGR"],
+    "Target_Gene": ["ERBB2"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["CD molecules|Minor histocompatibility antigens|Erb-b2 receptor tyrosine kinases|MicroRNA protein coding host genes"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["PML"],
+    "Target_Gene": ["CCND1"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Cyclins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["SMARCA4"],
+    "Target_Gene": ["CCND1"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Cyclins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["SOX2"],
+    "Target_Gene": ["VIM"],
+    "regulation": ["Activation"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Intermediate filaments Type III"],
+    "cancer_condition": ["UCEC"]
+  },
+  {
+    "TF": ["SP1"],
+    "Target_Gene": ["CCND1"],
+    "regulation": ["Activation,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Cyclins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["SP1"],
+    "Target_Gene": ["MET"],
+    "regulation": ["Activation,Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Receptor tyrosine kinases|IPT domain containing"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["SP1"],
+    "Target_Gene": ["STK11"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["SP1"],
+    "Target_Gene": ["VEGFA"],
+    "regulation": ["Activation,Repression,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["VEGF family"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["STAT5A"],
+    "Target_Gene": ["STK11"],
+    "regulation": ["Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["TCF3"],
+    "Target_Gene": ["POU5F1"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["POU class homeoboxes and pseudogenes"],
+    "cancer_condition": ["TGCT"]
+  },
+  {
+    "TF": ["TCF4"],
+    "Target_Gene": ["MYC"],
+    "regulation": ["Activation,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [0],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["TEAD4"],
+    "Target_Gene": ["VEGFA"],
+    "regulation": ["Repression"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["VEGF family"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["TP53"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Activation,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["ACC"]
+  },
+  {
+    "TF": ["TP53"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Activation,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["TP53"],
+    "Target_Gene": ["TP53"],
+    "regulation": ["Activation,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["WT1"],
+    "Target_Gene": ["MYC"],
+    "regulation": ["Repression,Unknown"],
+    "IN_TRRUST": [1],
+    "IN_hTFtarget": [0],
+    "IN_GRNdb": [1],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["ASCL1"],
+    "Target_Gene": ["MET"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Receptor tyrosine kinases|IPT domain containing"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["ASCL2"],
+    "Target_Gene": ["KRT18"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["ATF1"],
+    "Target_Gene": ["NRAS"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["RAS type GTPase family"],
+    "cancer_condition": ["ESCA"]
+  },
+  {
+    "TF": ["ATF1"],
+    "Target_Gene": ["TPT1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Small nucleolar RNA protein coding host genes"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["ATF3"],
+    "Target_Gene": ["ACTG1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Actins"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["ATF3"],
+    "Target_Gene": ["BRAF"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitogen-activated protein kinase kinase kinases|RAF family"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["ATF3"],
+    "Target_Gene": ["EGFR"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Erb-b2 receptor tyrosine kinases"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["ATF3"],
+    "Target_Gene": ["MYC"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["BCL3"],
+    "Target_Gene": ["KRT8"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type II"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["BHLHE40"],
+    "Target_Gene": ["NR2F6"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Nuclear receptor subfamily 2 group F"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["BRCA1"],
+    "Target_Gene": ["PCNA"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["CEBPA"],
+    "Target_Gene": ["CASP1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Caspases|Caspase recruitment domain containing"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["CEBPB"],
+    "Target_Gene": ["HDGF"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Heparin binding growth factor family"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["CEBPB"],
+    "Target_Gene": ["IDH1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Isocitrate dehydrogenases"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["CEBPB"],
+    "Target_Gene": ["KRT8"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type II"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["CEBPB"],
+    "Target_Gene": ["MUC1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["CLOCK"],
+    "Target_Gene": ["ERP29"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Protein disulfide isomerases"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["CREB1"],
+    "Target_Gene": ["AP2S1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Adaptor related protein complex 2"],
+    "cancer_condition": ["UCEC"]
+  },
+  {
+    "TF": ["CREB1"],
+    "Target_Gene": ["ARID1A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["CREB1"],
+    "Target_Gene": ["ARID1B"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["CREB1"],
+    "Target_Gene": ["CCND2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Cyclins"],
+    "cancer_condition": ["DLBC"]
+  },
+  {
+    "TF": ["CREB1"],
+    "Target_Gene": ["COX6B1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitochondrial complex IV: cytochrome c oxidase subunits"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["CREB1"],
+    "Target_Gene": ["MSH2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["MutS homologs"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["CREB1"],
+    "Target_Gene": ["NRAS"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["RAS type GTPase family"],
+    "cancer_condition": ["ESCA"]
+  },
+  {
+    "TF": ["CREB1"],
+    "Target_Gene": ["SMARCAD1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["CREB1"],
+    "Target_Gene": ["SUB1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["CREB1"],
+    "Target_Gene": ["TRMT112"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["CTCF"],
+    "Target_Gene": ["ARID1A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["CTCF"],
+    "Target_Gene": ["ARID1B"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["CTCF"],
+    "Target_Gene": ["COX7B"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitochondrial complex IV: cytochrome c oxidase subunits"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["CTCF"],
+    "Target_Gene": ["MET"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Receptor tyrosine kinases|IPT domain containing"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["CTCF"],
+    "Target_Gene": ["MET"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Receptor tyrosine kinases|IPT domain containing"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["CTCF"],
+    "Target_Gene": ["RAB8A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["RAB, member RAS oncogene GTPases"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["CTCF"],
+    "Target_Gene": ["SNRPB"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Sm spliceosomal proteins|Small nucleolar RNA protein coding host genes"],
+    "cancer_condition": ["LUSC"]
+  },
+  {
+    "TF": ["CTCF"],
+    "Target_Gene": ["TP53"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["CTCF"],
+    "Target_Gene": ["TRMT112"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["CTCF"],
+    "Target_Gene": ["VEGFA"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["VEGF family"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["E2F1"],
+    "Target_Gene": ["MAGOHB"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Exon junction complex"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["E2F1"],
+    "Target_Gene": ["MKI67"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Protein phosphatase 1 regulatory subunits"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["E2F1"],
+    "Target_Gene": ["MSH2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["MutS homologs"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["E2F1"],
+    "Target_Gene": ["MUC1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["E2F1"],
+    "Target_Gene": ["RPL6"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["L ribosomal proteins"],
+    "cancer_condition": ["TGCT"]
+  },
+  {
+    "TF": ["E2F1"],
+    "Target_Gene": ["TMSB10"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["E2F2"],
+    "Target_Gene": ["KRT18"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["E2F6"],
+    "Target_Gene": ["ACTG1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Actins"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["E2F6"],
+    "Target_Gene": ["MSH2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["MutS homologs"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["E2F6"],
+    "Target_Gene": ["SRP9"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Signal recognition particle"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["E2F6"],
+    "Target_Gene": ["STK11"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["E2F6"],
+    "Target_Gene": ["VEGFA"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["VEGF family"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["E2F7"],
+    "Target_Gene": ["ARID1A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["E2F7"],
+    "Target_Gene": ["KRT18"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["E2F7"],
+    "Target_Gene": ["MSH2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["MutS homologs"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["E2F7"],
+    "Target_Gene": ["PCNA"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["E2F7"],
+    "Target_Gene": ["PDIA3"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Protein disulfide isomerases"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["E2F7"],
+    "Target_Gene": ["SUB1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["E2F8"],
+    "Target_Gene": ["COX7B"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitochondrial complex IV: cytochrome c oxidase subunits"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["EHF"],
+    "Target_Gene": ["TPT1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Small nucleolar RNA protein coding host genes"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["EHF"],
+    "Target_Gene": ["TRMT112"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["ELF1"],
+    "Target_Gene": ["AP2S1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Adaptor related protein complex 2"],
+    "cancer_condition": ["UCEC"]
+  },
+  {
+    "TF": ["ELF1"],
+    "Target_Gene": ["ARID1A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["ELF1"],
+    "Target_Gene": ["KRT8"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type II"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["ELF1"],
+    "Target_Gene": ["PAX8"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["PRD class homeoboxes and pseudogenes|Paired boxes"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["ELK4"],
+    "Target_Gene": ["KRT8"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type II"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["EP300"],
+    "Target_Gene": ["AP2S1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Adaptor related protein complex 2"],
+    "cancer_condition": ["UCEC"]
+  },
+  {
+    "TF": ["EP300"],
+    "Target_Gene": ["CDKN2A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["EP300"],
+    "Target_Gene": ["COX6B1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitochondrial complex IV: cytochrome c oxidase subunits"],
+    "cancer_condition": ["LUSC"]
+  },
+  {
+    "TF": ["EP300"],
+    "Target_Gene": ["COX6B1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitochondrial complex IV: cytochrome c oxidase subunits"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["EP300"],
+    "Target_Gene": ["COX7A2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitochondrial complex IV: cytochrome c oxidase subunits"],
+    "cancer_condition": ["UCEC"]
+  },
+  {
+    "TF": ["EP300"],
+    "Target_Gene": ["COX7B"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitochondrial complex IV: cytochrome c oxidase subunits"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["EP300"],
+    "Target_Gene": ["SRP9"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Signal recognition particle"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["EP300"],
+    "Target_Gene": ["SUMO1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["EP300"],
+    "Target_Gene": ["ZEB2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Zinc fingers C2H2-type|ZF class homeoboxes and pseudogenes"],
+    "cancer_condition": ["DLBC"]
+  },
+  {
+    "TF": ["ERG"],
+    "Target_Gene": ["COX6A1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitochondrial complex IV: cytochrome c oxidase subunits"],
+    "cancer_condition": ["ACC"]
+  },
+  {
+    "TF": ["ERG"],
+    "Target_Gene": ["MET"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Receptor tyrosine kinases|IPT domain containing"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["ERG"],
+    "Target_Gene": ["MYH11"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Myosin heavy chains, class II"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["ESR1"],
+    "Target_Gene": ["GATA3"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["GATA zinc finger domain containing"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["ETS1"],
+    "Target_Gene": ["CD274"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Receptor ligands|V-set domain containing|C2-set domain containing|B7 family"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["ETS1"],
+    "Target_Gene": ["PRKCSH"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["EF-hand domain containing|MRH domain containing "],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["ETS1"],
+    "Target_Gene": ["SNRPB"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Sm spliceosomal proteins|Small nucleolar RNA protein coding host genes"],
+    "cancer_condition": ["LUSC"]
+  },
+  {
+    "TF": ["ETS1"],
+    "Target_Gene": ["SUMO1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["ETS2"],
+    "Target_Gene": ["KRT8"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type II"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["ETS2"],
+    "Target_Gene": ["RPS7"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["S ribosomal proteins"],
+    "cancer_condition": ["UCS"]
+  },
+  {
+    "TF": ["FLI1"],
+    "Target_Gene": ["CCR5"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|C-C motif chemokine receptors"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["FLI1"],
+    "Target_Gene": ["CDKN2A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["FLI1"],
+    "Target_Gene": ["MAN2B1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mannosidases alpha class 2"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["FLI1"],
+    "Target_Gene": ["MET"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Receptor tyrosine kinases|IPT domain containing"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["FLI1"],
+    "Target_Gene": ["MYH11"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Myosin heavy chains, class II"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["FLI1"],
+    "Target_Gene": ["PRKCSH"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["EF-hand domain containing|MRH domain containing "],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["FLI1"],
+    "Target_Gene": ["SNRPB"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Sm spliceosomal proteins|Small nucleolar RNA protein coding host genes"],
+    "cancer_condition": ["LUSC"]
+  },
+  {
+    "TF": ["FLI1"],
+    "Target_Gene": ["SRP9"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Signal recognition particle"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["FOSL1"],
+    "Target_Gene": ["ACTG1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Actins"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["FOSL1"],
+    "Target_Gene": ["KRT19"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["FOSL1"],
+    "Target_Gene": ["KRT8"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type II"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["FOSL2"],
+    "Target_Gene": ["ACTG1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Actins"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["FOSL2"],
+    "Target_Gene": ["MYC"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["FOSL2"],
+    "Target_Gene": ["ZEB2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Zinc fingers C2H2-type|ZF class homeoboxes and pseudogenes"],
+    "cancer_condition": ["DLBC"]
+  },
+  {
+    "TF": ["FOXA1"],
+    "Target_Gene": ["GATA3"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["GATA zinc finger domain containing"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["FOXA1"],
+    "Target_Gene": ["SRP9"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Signal recognition particle"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["FOXA2"],
+    "Target_Gene": ["KRT18"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["ESCA"]
+  },
+  {
+    "TF": ["FOXM1"],
+    "Target_Gene": ["KRT18"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["GABPA"],
+    "Target_Gene": ["ARID1A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["GABPA"],
+    "Target_Gene": ["ARID1B"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["GABPA"],
+    "Target_Gene": ["COX7A2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitochondrial complex IV: cytochrome c oxidase subunits"],
+    "cancer_condition": ["UCEC"]
+  },
+  {
+    "TF": ["GABPA"],
+    "Target_Gene": ["SMARCAD1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["GABPA"],
+    "Target_Gene": ["SRP9"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Signal recognition particle"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["GABPA"],
+    "Target_Gene": ["TPT1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Small nucleolar RNA protein coding host genes"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["GABPA"],
+    "Target_Gene": ["TRMT112"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["GABPA"],
+    "Target_Gene": ["VEGFA"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["VEGF family"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["GATA4"],
+    "Target_Gene": ["KRT18"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["ESCA"]
+  },
+  {
+    "TF": ["GRHL2"],
+    "Target_Gene": ["ERBB2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Minor histocompatibility antigens|Erb-b2 receptor tyrosine kinases|MicroRNA protein coding host genes"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["GRHL2"],
+    "Target_Gene": ["IDH1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Isocitrate dehydrogenases"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["GRHL2"],
+    "Target_Gene": ["KRT18"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["GTF2B"],
+    "Target_Gene": ["ACTG1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Actins"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["HCFC1"],
+    "Target_Gene": ["NR2F6"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Nuclear receptor subfamily 2 group F"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["HDAC2"],
+    "Target_Gene": ["MKI67"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Protein phosphatase 1 regulatory subunits"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["HDAC2"],
+    "Target_Gene": ["MSH2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["MutS homologs"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["HDAC2"],
+    "Target_Gene": ["PCNA"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["HDAC2"],
+    "Target_Gene": ["SUMO1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["IRF1"],
+    "Target_Gene": ["CASP1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Caspases|Caspase recruitment domain containing"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["IRF1"],
+    "Target_Gene": ["CCR5"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|C-C motif chemokine receptors"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["IRF1"],
+    "Target_Gene": ["CCR5"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|C-C motif chemokine receptors"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["IRF1"],
+    "Target_Gene": ["CD274"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Receptor ligands|V-set domain containing|C2-set domain containing|B7 family"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["IRF1"],
+    "Target_Gene": ["FUCA1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Alpha-L-fucosidases"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["IRF1"],
+    "Target_Gene": ["MYC"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["IRF1"],
+    "Target_Gene": ["PDIA3"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Protein disulfide isomerases"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["IRF1"],
+    "Target_Gene": ["PTPN6"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["SH2 domain containing|Protein tyrosine phosphatases non-receptor type"],
+    "cancer_condition": ["UCEC"]
+  },
+  {
+    "TF": ["IRF1"],
+    "Target_Gene": ["RAB8A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["RAB, member RAS oncogene GTPases"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["IRF1"],
+    "Target_Gene": ["TMSB10"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["IRF2"],
+    "Target_Gene": ["CD274"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Receptor ligands|V-set domain containing|C2-set domain containing|B7 family"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["IRF4"],
+    "Target_Gene": ["CASP1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Caspases|Caspase recruitment domain containing"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["IRF4"],
+    "Target_Gene": ["CD274"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Receptor ligands|V-set domain containing|C2-set domain containing|B7 family"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["JUN"],
+    "Target_Gene": ["ZEB2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Zinc fingers C2H2-type|ZF class homeoboxes and pseudogenes"],
+    "cancer_condition": ["DLBC"]
+  },
+  {
+    "TF": ["JUND"],
+    "Target_Gene": ["ACTG1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Actins"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["JUND"],
+    "Target_Gene": ["KRT19"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["KDM5B"],
+    "Target_Gene": ["MYC"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["KDM5B"],
+    "Target_Gene": ["SRP9"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Signal recognition particle"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["KDM5B"],
+    "Target_Gene": ["SRP9"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Signal recognition particle"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["KDM5B"],
+    "Target_Gene": ["SUB1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["KDM5B"],
+    "Target_Gene": ["TPT1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Small nucleolar RNA protein coding host genes"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["KDM5B"],
+    "Target_Gene": ["TRMT112"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["KLF3"],
+    "Target_Gene": ["MET"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Receptor tyrosine kinases|IPT domain containing"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["KLF4"],
+    "Target_Gene": ["MUC1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["KLF4"],
+    "Target_Gene": ["MYC"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["KLF4"],
+    "Target_Gene": ["NRAS"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["RAS type GTPase family"],
+    "cancer_condition": ["ESCA"]
+  },
+  {
+    "TF": ["KLF4"],
+    "Target_Gene": ["POU5F1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["POU class homeoboxes and pseudogenes"],
+    "cancer_condition": ["TGCT"]
+  },
+  {
+    "TF": ["KLF5"],
+    "Target_Gene": ["ERBB2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Minor histocompatibility antigens|Erb-b2 receptor tyrosine kinases|MicroRNA protein coding host genes"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["KLF5"],
+    "Target_Gene": ["KRT18"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["KLF5"],
+    "Target_Gene": ["KRT8"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type II"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["KLF5"],
+    "Target_Gene": ["MET"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Receptor tyrosine kinases|IPT domain containing"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["KLF5"],
+    "Target_Gene": ["MUC1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["KLF5"],
+    "Target_Gene": ["MUC1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["KLF5"],
+    "Target_Gene": ["NR2F6"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Nuclear receptor subfamily 2 group F"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["KLF5"],
+    "Target_Gene": ["RAB8A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["RAB, member RAS oncogene GTPases"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["KLF5"],
+    "Target_Gene": ["SUB1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["MAFF"],
+    "Target_Gene": ["MYC"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Basic helix-loop-helix proteins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["MAX"],
+    "Target_Gene": ["RAB8A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["RAB, member RAS oncogene GTPases"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["MAZ"],
+    "Target_Gene": ["CDK4"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Cyclin dependent kinases|MicroRNA protein coding host genes"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["MAZ"],
+    "Target_Gene": ["COX6A1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitochondrial complex IV: cytochrome c oxidase subunits"],
+    "cancer_condition": ["UCEC"]
+  },
+  {
+    "TF": ["MAZ"],
+    "Target_Gene": ["HDGF"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Heparin binding growth factor family"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["MAZ"],
+    "Target_Gene": ["KRT19"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type I"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["MAZ"],
+    "Target_Gene": ["MAGOHB"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Exon junction complex"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["MAZ"],
+    "Target_Gene": ["MSH2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["MutS homologs"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["MAZ"],
+    "Target_Gene": ["PKM"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["MAZ"],
+    "Target_Gene": ["PRKCSH"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["EF-hand domain containing|MRH domain containing "],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["MAZ"],
+    "Target_Gene": ["STK11"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["MAZ"],
+    "Target_Gene": ["TMSB10"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["MTA3"],
+    "Target_Gene": ["RAB8A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["RAB, member RAS oncogene GTPases"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["MXI1"],
+    "Target_Gene": ["AP2S1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Adaptor related protein complex 2"],
+    "cancer_condition": ["UCEC"]
+  },
+  {
+    "TF": ["NANOG"],
+    "Target_Gene": ["TP53"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["NFIC"],
+    "Target_Gene": ["NR2F6"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Nuclear receptor subfamily 2 group F"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["PBX3"],
+    "Target_Gene": ["SUB1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["PHF8"],
+    "Target_Gene": ["ARID1A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["PML"],
+    "Target_Gene": ["NR2F6"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Nuclear receptor subfamily 2 group F"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["POLR2A"],
+    "Target_Gene": ["ARID1A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["POLR2A"],
+    "Target_Gene": ["PDIA3"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Protein disulfide isomerases"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["POLR2A"],
+    "Target_Gene": ["SNRPB"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Sm spliceosomal proteins|Small nucleolar RNA protein coding host genes"],
+    "cancer_condition": ["LUSC"]
+  },
+  {
+    "TF": ["POLR2A"],
+    "Target_Gene": ["TRMT112"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["PRDM1"],
+    "Target_Gene": ["CASP1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Caspases|Caspase recruitment domain containing"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["RAD21"],
+    "Target_Gene": ["ARID1A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["RBBP5"],
+    "Target_Gene": ["HDGF"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Heparin binding growth factor family"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["RBBP5"],
+    "Target_Gene": ["NR2F6"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Nuclear receptor subfamily 2 group F"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["RBBP5"],
+    "Target_Gene": ["SRP9"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Signal recognition particle"],
+    "cancer_condition": ["BRCA"]
+  },
+  {
+    "TF": ["RBBP5"],
+    "Target_Gene": ["SRP9"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Signal recognition particle"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["RBBP5"],
+    "Target_Gene": ["TRMT112"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["RELA"],
+    "Target_Gene": ["SF1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Zinc fingers CCHC-type|Spliceosomal A complex|Spliceosomal E complex"],
+    "cancer_condition": ["ACC"]
+  },
+  {
+    "TF": ["REST"],
+    "Target_Gene": ["AP2S1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Adaptor related protein complex 2"],
+    "cancer_condition": ["UCEC"]
+  },
+  {
+    "TF": ["RUNX3"],
+    "Target_Gene": ["CD274"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Receptor ligands|V-set domain containing|C2-set domain containing|B7 family"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["RUNX3"],
+    "Target_Gene": ["TMSB10"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["RXRA"],
+    "Target_Gene": ["STK11"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["SIN3A"],
+    "Target_Gene": ["COX6B1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitochondrial complex IV: cytochrome c oxidase subunits"],
+    "cancer_condition": ["LUSC"]
+  },
+  {
+    "TF": ["SIN3A"],
+    "Target_Gene": ["STK11"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["SMARCA4"],
+    "Target_Gene": ["RAB8A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["RAB, member RAS oncogene GTPases"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["SMARCC1"],
+    "Target_Gene": ["MET"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Receptor tyrosine kinases|IPT domain containing"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["SP1"],
+    "Target_Gene": ["KRT8"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type II"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["SP4"],
+    "Target_Gene": ["ARID1A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["SP4"],
+    "Target_Gene": ["VEGFA"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["VEGF family"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["SPI1"],
+    "Target_Gene": ["COX6A1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mitochondrial complex IV: cytochrome c oxidase subunits"],
+    "cancer_condition": ["ACC"]
+  },
+  {
+    "TF": ["SPI1"],
+    "Target_Gene": ["CST3"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Cystatins, type 2"],
+    "cancer_condition": ["DLBC"]
+  },
+  {
+    "TF": ["SPI1"],
+    "Target_Gene": ["MAN2B1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mannosidases alpha class 2"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["SPI1"],
+    "Target_Gene": ["MAN2B1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Mannosidases alpha class 2"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["SPI1"],
+    "Target_Gene": ["MUC1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["SPI1"],
+    "Target_Gene": ["SRP9"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Signal recognition particle"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["SPI1"],
+    "Target_Gene": ["STK11"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["SPI1"],
+    "Target_Gene": ["TMSB10"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["SPIB"],
+    "Target_Gene": ["CD274"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Receptor ligands|V-set domain containing|C2-set domain containing|B7 family"],
+    "cancer_condition": ["COAD"]
+  },
+  {
+    "TF": ["SRF"],
+    "Target_Gene": ["ACTG1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Actins"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["SRF"],
+    "Target_Gene": ["KRT8"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Keratins, type II"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["STAT1"],
+    "Target_Gene": ["TMSB10"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["TAF1"],
+    "Target_Gene": ["ARID1A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["TAF1"],
+    "Target_Gene": ["TRMT112"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["THCA"]
+  },
+  {
+    "TF": ["TCF3"],
+    "Target_Gene": ["MKI67"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Protein phosphatase 1 regulatory subunits"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["TFAP2A"],
+    "Target_Gene": ["MUC1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["TFAP2A"],
+    "Target_Gene": ["MUC1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["TFAP2C"],
+    "Target_Gene": ["EGFR"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Erb-b2 receptor tyrosine kinases"],
+    "cancer_condition": ["LUSC"]
+  },
+  {
+    "TF": ["TFAP2C"],
+    "Target_Gene": ["MUC1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["KIRC"]
+  },
+  {
+    "TF": ["TFAP2C"],
+    "Target_Gene": ["MUC1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["UBTF"],
+    "Target_Gene": ["MSH2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["MutS homologs"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["USF1"],
+    "Target_Gene": ["HDGF"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Heparin binding growth factor family"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["ZBTB17"],
+    "Target_Gene": ["STK11"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["ZBTB7A"],
+    "Target_Gene": ["CCND1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Cyclins"],
+    "cancer_condition": ["PRAD"]
+  },
+  {
+    "TF": ["ZBTB7A"],
+    "Target_Gene": ["MUC1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["CD molecules|Mucins"],
+    "cancer_condition": ["KIRP"]
+  },
+  {
+    "TF": ["ZBTB7A"],
+    "Target_Gene": ["STK11"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LUAD"]
+  },
+  {
+    "TF": ["ZNF384"],
+    "Target_Gene": ["AP2S1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Adaptor related protein complex 2"],
+    "cancer_condition": ["UCEC"]
+  },
+  {
+    "TF": ["ZNF384"],
+    "Target_Gene": ["ARID1A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["ZNF384"],
+    "Target_Gene": ["ARID1B"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["AT-rich interaction domain containing|Armadillo like helical domain containing|BAF complex"],
+    "cancer_condition": ["CESC"]
+  },
+  {
+    "TF": ["ZNF384"],
+    "Target_Gene": ["NR2F6"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Nuclear receptor subfamily 2 group F"],
+    "cancer_condition": ["OV"]
+  },
+  {
+    "TF": ["ZNF384"],
+    "Target_Gene": ["RAB8A"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["RAB, member RAS oncogene GTPases"],
+    "cancer_condition": ["STAD"]
+  },
+  {
+    "TF": ["ZNF384"],
+    "Target_Gene": ["RN7SL1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Signal recognition particle|Long non-coding RNAs with non-systematic symbols"],
+    "cancer_condition": ["LUSC"]
+  },
+  {
+    "TF": ["ZNF384"],
+    "Target_Gene": ["SUMO1"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Others"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["ZNF384"],
+    "Target_Gene": ["VEGFA"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["VEGF family"],
+    "cancer_condition": ["LIHC"]
+  },
+  {
+    "TF": ["ZNF384"],
+    "Target_Gene": ["ZEB2"],
+    "regulation": [null],
+    "IN_TRRUST": [0],
+    "IN_hTFtarget": [1],
+    "IN_GRNdb": [1],
+    "gene_family": ["Zinc fingers C2H2-type|ZF class homeoboxes and pseudogenes"],
+    "cancer_condition": ["DLBC"]
+  }
+]
