@@ -188,7 +188,7 @@ async function  runiPredictLogic(){
          if (!targetPanel.classList.contains('open')) {
              toggleButton.click();
          }
-        filterGenefamily1();
+        filterGenefamily();
     };
     modeSelect.addEventListener("change", window.handleModechange);
     // 监听下拉菜单的 change 事件
@@ -294,7 +294,7 @@ async function runRNADCLogic(){
         if (!targetPanel.classList.contains('open')) {
             toggleButton.click();
         }
-        filterGenefamily1();
+        filterGenefamily2();
     };
     modeSelect.addEventListener("change", window.handleModechange);
     // // 监听下拉菜单的 change 事件
@@ -415,7 +415,7 @@ function filterGenefamily() {
     // 提取并统计 Subcellular_location 分类
     filteredTFTarget.forEach(item => {
         if (item.gene_family) {
-            const locations = item.gene_family[0].split('|'); ///(?<=\S),(?=\S)/
+            const locations = item.gene_family[0].trim().split('|'); ///(?<=\S),(?=\S)/ |
             locations.forEach(location => {
                 GenefamilyCount[location] = (GenefamilyCount[location] || 0) + 1;
             });
@@ -501,7 +501,7 @@ function filterGenefamily() {
         // 提取并统计 Subcellular_location 分类
         filteredTFTarget.forEach(item => {
             if (item.gene_family) {
-                const locations = item.gene_family[0].split('|');
+                const locations = item.gene_family[0].trim().split('|');
                 locations.forEach(location => {
                     GenefamilyCount[location] = (GenefamilyCount[location] || 0) + 1;
                 });
@@ -578,7 +578,7 @@ function filterGenefamily() {
         // 提取并统计 Subcellular_location 分类
         filteredTFTarget.forEach(item => {
             if (item.gene_family) {
-                const locations = item.gene_family[0].split('|');
+                const locations = item.gene_family[0].trim().split('|');
                 locations.forEach(location => {
                     GenefamilyCount[location] = (GenefamilyCount[location] || 0) + 1;
                 });
@@ -674,7 +674,7 @@ function filterData() {
     // 获取第一步筛选结果
     let filteredTFTarget =  filteredTFTargetStep1.filter(item => {
         if (item.gene_family) {
-            const locations = item.gene_family[0].split('|');
+            const locations = item.gene_family[0].trim().split('|');
             return locations.some(location => checkedLocations.includes(location.trim()));
         }
         return false;
